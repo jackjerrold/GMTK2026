@@ -8,9 +8,6 @@ public class Lightning : MonoBehaviour
     [SerializeField]
     private GameObject prefab;
 
-    [SerializeField]
-    private DrawLightning drawLightning;
-
     private GameObject lightning;
     private float lightningDuration = 1.0f;
 
@@ -85,7 +82,8 @@ public class Lightning : MonoBehaviour
 
     private void CreateLightning(RaycastHit2D ray) {
         lightning = Instantiate(prefab, prefab.transform.position, Quaternion.identity);
-        drawLightning.startPoint = cloud.transform;
+        DrawLightning drawLightning = lightning.GetComponent<DrawLightning>();
+        drawLightning.startPoint = cloud;
         drawLightning.endPoint = (ray.collider != null) ? ray.transform : player.transform;
         Destroy(lightning, lightningDuration);
     }

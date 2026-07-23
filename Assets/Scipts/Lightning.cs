@@ -6,7 +6,10 @@ public class Lightning : MonoBehaviour
     private Transform player;
 
     [SerializeField]
+    private GameObject prefab;
+
     private GameObject lightning;
+    private float lightningDuration = 1.0f;
 
     [SerializeField]
     private Transform cloud;
@@ -28,7 +31,7 @@ public class Lightning : MonoBehaviour
 
     void Start()
     {
-        lightning.SetActive(false);
+        prefab.SetActive(false);
     }
 
     void Update()
@@ -46,16 +49,12 @@ public class Lightning : MonoBehaviour
 
         if (timer >= countdown) { 
                 RaycastHit2D ray = Raycast(player.position);
-                //ray.collider == null means no collision
-                //ray.collider != null means ray.collider has info on the object it collided with
 
-                lightning.SetActive(true); //Make the lightning appear when countdown is reached
+                CreateLightning();
 
-                //I tried to avoid big IF statement towers but i js cant here without having RAY not defined or not checking RAY before ROD.ABSORB()
-                //Rewrite if you can make it more readable (maybe class variable but idk)
                 if (ray.collider == null) { 
                     if (rod.Absorb() == true) {
-                        lightning.SetActive(false); //Hides the lightning if the rod absorbed it
+                        Destroy(lightning); //Hides the lightning if the rod absorbed it
                     }
                 } else {
                     /*
@@ -70,22 +69,25 @@ public class Lightning : MonoBehaviour
                     */
                 }
                 timer = 0f;
-        } else if (timer >= 1.0f) { //Hide the lightning after x seconds
-            lightning.SetActive(false); 
         }
-
     }
 
     void FixedUpdate() {
         Debug.Log($"Timer: {timer}");
     }
 
-    private RaycastHit2D Raycast(Vector2 targetPosition) {
-        Vector2 startPosition = new Vector2(cloud.position.x, cloud.position.y);
+    private RaycastHit2D Raycast(Vector2 startPosition) {
+        Vector2 targetPosition = new Vector2(cloud.position.x, cloud.position.y);
         Vector2 distance = targetPosition - startPosition;
         
         RaycastHit2D ray = Physics2D.Raycast(startPosition, distance.normalized, distance.magnitude, obstacleLayer);
 
         return ray;
+    }
+
+    private void CreateLightning() {
+        lightning = Instantiate(prefab, prefab.transform.position, Quaternion.identity);
+        lightning.SetActive(true);
+        Destroy(lightning, lightningDuration);
     }
 }

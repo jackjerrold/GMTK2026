@@ -700,7 +700,7 @@ Transform:
   m_Children:
   - {fileID: 668870445}
   - {fileID: 729974185}
-  m_Father: {fileID: 1067219101}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1023263895
 MonoBehaviour:
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lightning
   player: {fileID: 596794711}
-  lightning: {fileID: 668870444}
+  prefab: {fileID: 668870444}
   cloud: {fileID: 729974185}
   rod: {fileID: 1182166077}
   obstacleLayer:
@@ -754,7 +754,6 @@ Transform:
   - {fileID: 596794711}
   - {fileID: 1182166076}
   - {fileID: 274486295}
-  - {fileID: 1023263894}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1182166075
@@ -821,7 +820,6 @@ MonoBehaviour:
   player: {fileID: 596794714}
   rod: {fileID: 1269542764}
   rodScript: {fileID: 1182166077}
-  lightning: {fileID: 668870446}
   cloud: {fileID: 729974186}
   ground: {fileID: 2117002488}
 --- !u!1 &1269542762
@@ -1063,3 +1061,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 2117002489}
   - {fileID: 1067219101}
+  - {fileID: 1023263894}

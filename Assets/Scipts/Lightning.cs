@@ -29,11 +29,6 @@ public class Lightning : MonoBehaviour
 
     private float timer = 0f;
 
-    void Start()
-    {
-        prefab.SetActive(false);
-    }
-
     void Update()
     {
         timer += Time.deltaTime;
@@ -87,7 +82,6 @@ public class Lightning : MonoBehaviour
 
     private void CreateLightning() {
         lightning = Instantiate(prefab, prefab.transform.position, Quaternion.identity);
-        lightning.SetActive(true);
         Destroy(lightning, lightningDuration);
     }
 }

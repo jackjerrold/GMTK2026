@@ -566,7 +566,7 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.05339978, g: 0.74785006, b: 0.754717, a: 1}
+  m_Color: {r: 0.05339978, g: 0.74785006, b: 0.754717, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -716,6 +716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Lightning
   player: {fileID: 596794711}
   prefab: {fileID: 668870444}
+  drawLightning: {fileID: 0}
   cloud: {fileID: 729974185}
   rod: {fileID: 1182166077}
   obstacleLayer:

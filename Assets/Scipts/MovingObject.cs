@@ -9,7 +9,10 @@ public class MovingObject : MonoBehaviour
     public bool useTime = true;
     public float time = 1f;
     public float moveSpeed;
+    public bool moveOnTouch = false;
 
+
+    private bool objectTouched = false;
     private bool shouldWait = false;
     private float elapsedTime;
     private int currentNode = 0;
@@ -33,7 +36,13 @@ public class MovingObject : MonoBehaviour
 
     private void Update()
     {
+        if (moveOnTouch && !objectTouched)
+        {
+            return;
+        }
+
         elapsedTime += Time.deltaTime;
+
 
         if (shouldWait)
         {
@@ -60,11 +69,21 @@ public class MovingObject : MonoBehaviour
             Debug.Log(elapsedTime);
             elapsedTime = 0;
 
+            if (nextNode == 1)
+            {
+                objectTouched = false;
+            }
+
             if (waitBetweenNodes > 0)
             {
                 shouldWait = true;
             }
 
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        //DEATH SHALL COME TO US ALL
+        objectTouched = true;
     }
 }

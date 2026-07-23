@@ -19,7 +19,7 @@ public class RunState : PlayerBaseState
     public override void FixedUpdateState(PlayerStateManager state)
     {
         
-        state.rb.velocity = new Vector2(state.moveSpeed * state.MoveInput.x, state.rb.velocity.y); 
+        state.rb.linearVelocity = new Vector2(state.moveSpeed * state.MoveInput.x, state.rb.linearVelocity.y); 
     }
 }
 

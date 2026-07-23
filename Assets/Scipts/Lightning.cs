@@ -8,6 +8,9 @@ public class Lightning : MonoBehaviour
     [SerializeField]
     private GameObject prefab;
 
+    [SerializeField]
+    private DrawLightning drawLightning;
+
     private GameObject lightning;
     private float lightningDuration = 1.0f;
 
@@ -45,7 +48,7 @@ public class Lightning : MonoBehaviour
         if (timer >= countdown) { 
                 RaycastHit2D ray = Raycast(player.position);
 
-                CreateLightning();
+                CreateLightning(ray);
 
                 if (ray.collider == null) { 
                     if (rod.Absorb() == true) {
@@ -80,8 +83,10 @@ public class Lightning : MonoBehaviour
         return ray;
     }
 
-    private void CreateLightning() {
+    private void CreateLightning(RaycastHit2D ray) {
         lightning = Instantiate(prefab, prefab.transform.position, Quaternion.identity);
+        drawLightning.startPoint = cloud.transform;
+        drawLightning.endPoint = (ray.collider != null) ? ray.transform : player.transform;
         Destroy(lightning, lightningDuration);
     }
 }

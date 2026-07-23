@@ -11,7 +11,6 @@ public class Colouring : MonoBehaviour
     [SerializeField]
     private RodControls rodScript;
 
-
     [SerializeField]
     private SpriteRenderer cloud;
 

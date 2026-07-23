@@ -946,8 +946,9 @@ MonoBehaviour:
   - {fileID: 9692987}
   - {fileID: 216769433}
   smoothInterpolation: 0
+  waitBetweenNodes: 0
   useTime: 1
-  time: 4
+  time: 1
   moveSpeed: 5
 --- !u!4 &2134893476
 Transform:

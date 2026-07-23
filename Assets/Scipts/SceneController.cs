@@ -2,14 +2,24 @@ using UnityEngine;
 
 public class SceneController : MonoBehaviour
 {
-    private int currentSceneIndex = 0;
-    void Start()
+    [SerializeField] private Transform Player;
+
+    public Vector2 CurrentCheckPointPosition;
+
+    private void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        CurrentCheckPointPosition = Player.position;
+    }
+
+    public void die()
+    {
+        //ADD DEATH ANIM
+        Player.transform.position = CurrentCheckPointPosition;
     }
 
     public void NextScene()
     {
+        int currentSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
         if (nextSceneIndex < UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings)
         {

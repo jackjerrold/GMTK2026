@@ -27,7 +27,7 @@ public class RodControls : MonoBehaviour
             RotateToMouse();
             
 
-            Debug.Log($"Player Position: {player.position} | Rod Position: {transform.position} | Rod rotation: {transform.rotation}");
+            //Debug.Log($"Player Position: {player.position} | Rod Position: {transform.position} | Rod rotation: {transform.rotation}");
         }
         //FollowMousePosition();
     }

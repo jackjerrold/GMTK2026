@@ -10,10 +10,6 @@ public class RodControls : MonoBehaviour
 
     public float expellPower = 5;
 
-    //Used to track the time isCharged is true
-    private float chargeDuration = 1.5f; 
-    private float chargeTimer = 0f;
-
     [SerializeField]
     private float absorbAngle = 25f; //Angle that lightning can be absorbed (from the horizontal)
 
@@ -48,7 +44,7 @@ public class RodControls : MonoBehaviour
             
             //        //Debug.Log($"Player Position: {player.position} | Rod Position: {transform.position} | Rod rotation: {transform.rotation}");
 
-            if (transform.eulerAngles.z >= absorbAngle && transform.eulerAngles.z <= 180f-absorbAngle) { //absorbAngle from the horizontal
+            if (transform.eulerAngles.z >= absorbAngle && transform.eulerAngles.z <= 180f-absorbAngle && !isCharged) { //absorbAngle from the horizontal
                 canAbsorb = true;
             } else {
                 canAbsorb = false;
@@ -56,9 +52,8 @@ public class RodControls : MonoBehaviour
         }
 
         if (isCharged) { //isCharged logic with timer
-            chargeTimer += Time.deltaTime;
 
-            if (chargeTimer >= chargeDuration || Mouse.current.leftButton.wasPressedThisFrame)
+            if (Mouse.current.leftButton.wasPressedThisFrame)
             {
                 expell();
             }
@@ -91,7 +86,6 @@ public class RodControls : MonoBehaviour
     private void expell()
     {
         isCharged = false;
-        chargeTimer = 0f;
 
         Vector2 Dir  = rodTip.position - player.position;
         lightningManager.ExpellLightning(rodTip, Dir);

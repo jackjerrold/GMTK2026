@@ -1,11 +1,14 @@
 using System.Net;
+using TMPro;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class Lightning : MonoBehaviour
 {
     [SerializeField]
     private Transform player;
+
+    [SerializeField]
+    private TextMeshProUGUI tmp;
 
     [SerializeField]
     private SceneController sceneController;
@@ -35,8 +38,12 @@ public class Lightning : MonoBehaviour
 
     void Update()
     {
+        updateTimer();
+
         timer += Time.deltaTime;
         transform.position = new Vector2(player.position.x, transform.position.y);
+
+
 
         if (timer >= countdown)
         {
@@ -154,5 +161,15 @@ public class Lightning : MonoBehaviour
         drawLightning.jitterAmount = jitterVariation;
         drawLightning.lightningDuration = lightningDuration; // Vary duration slightly
         Destroy(endTransform, lightningDuration);
+    }
+
+    private void updateTimer()
+    {
+        int displayTime = (int)Mathf.Round(countdown - timer);
+
+        if (tmp != null)
+        {
+            tmp.text = displayTime.ToString();
+        }
     }
 }

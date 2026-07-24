@@ -1,9 +1,8 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Recommended for scene loading
+using UnityEngine.SceneManagement;
 
 public class ButtonClick : MonoBehaviour
 {
-    // Variables must be INSIDE the class
     public bool isStart;
     public bool isQuit;
 

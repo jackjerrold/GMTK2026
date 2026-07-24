@@ -726,6 +726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ab4bd1b88fea74ab96448551981452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
+  Player: {fileID: 0}
+  CurrentCheckPointPosition: {x: 0, y: 0}
 --- !u!4 &825175477
 Transform:
   m_ObjectHideFlags: 0
@@ -751,12 +753,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1067219101}
   - component: {fileID: 1067219103}
-  - component: {fileID: 1067219104}
   - component: {fileID: 1067219105}
   - component: {fileID: 1067219106}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -794,7 +795,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.6
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -806,26 +807,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1067219104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067219100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d1db36d9294a6418c06ef103634188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveController
-  moveSpeed: 5
-  jumpHeight: 5
-  MoveInput: {x: 0, y: 0}
-  groundCheck: {fileID: 274486295}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  checkRadius: 0.2
 --- !u!114 &1067219105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -857,8 +838,8 @@ MonoBehaviour:
     m_ActionName: New action map/run
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1067219104}
-        m_TargetAssemblyTypeName: MoveController, Assembly-CSharp
+      - m_Target: {fileID: 1067219106}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
@@ -873,8 +854,8 @@ MonoBehaviour:
     m_ActionName: 'New action map1/jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1067219104}
-        m_TargetAssemblyTypeName: MoveController, Assembly-CSharp
+      - m_Target: {fileID: 1067219106}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
         m_MethodName: OnRun
         m_Mode: 0
         m_Arguments:
@@ -908,11 +889,11 @@ MonoBehaviour:
   maxJumps: 2
   MoveInput: {x: 0, y: 0}
   moveSpeed: 5
-  jumpHeight: 5
-  groundCheck: {fileID: 0}
+  jumpHeight: 10
+  groundCheck: {fileID: 274486295}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   checkRadius: 0.2
   rb: {fileID: 0}
 --- !u!1 &1182166075
@@ -962,6 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626ec77d2b2e734d8fdf98f8831d0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RodControls
+  expellPower: 5
   absorbAngle: 25
   player: {fileID: 596794711}
   rodTip: {fileID: 1223948065}
@@ -981,7 +963,7 @@ MonoBehaviour:
   player: {fileID: 596794714}
   rod: {fileID: 1269542764}
   rodScript: {fileID: 1182166077}
-  cloud: {fileID: 729974186}
+  cloud: {fileID: 0}
   ground: {fileID: 2117002488}
 --- !u!1 &1223948064
 GameObject:
@@ -1389,9 +1371,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 619394802}
   - {fileID: 2117002489}
   - {fileID: 2103330848}
   - {fileID: 1067219101}
   - {fileID: 238695933}
   - {fileID: 825175477}
+  - {fileID: 619394802}

@@ -8,6 +8,8 @@ public class RodControls : MonoBehaviour
     private bool canAbsorb = false;
     private bool isCharged = false;
 
+    public float expellPower = 5;
+
     //Used to track the time isCharged is true
     private float chargeDuration = 1.5f; 
     private float chargeTimer = 0f;
@@ -18,6 +20,10 @@ public class RodControls : MonoBehaviour
     [SerializeField]
     private Transform player;
 
+    private MoveController moveController;
+
+    [SerializeField]
+    private Lightning lightningManager;
 
     public Transform rodTip;
     
@@ -28,6 +34,7 @@ public class RodControls : MonoBehaviour
     void Start()
     {
        mainCamera = Camera.main;
+       moveController = player.GetComponent<MoveController>();
     }
 
     
@@ -51,17 +58,16 @@ public class RodControls : MonoBehaviour
         if (isCharged) { //isCharged logic with timer
             chargeTimer += Time.deltaTime;
 
-            if (chargeTimer >= chargeDuration) {
-                isCharged = false;
-                chargeTimer = 0f;
-                //Add something more after the timer runs out but idk rn
+            if (chargeTimer >= chargeDuration || Mouse.current.leftButton.wasPressedThisFrame)
+            {
+                expell();
             }
         }
     }
     
     private void RotateToMouse() {
         if (Mouse.current == null || mainCamera == null) return; {
-            //Checking and getting all the info from the mouse into x, y coords on the game
+            //Checking and getting all the info from the mouse intss x, y coords on the games
             Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue()); 
             Vector2 direction = mousePosition - (Vector2)transform.position;
             
@@ -80,5 +86,15 @@ public class RodControls : MonoBehaviour
 
     public bool IsCharged() { //Just for the colouring file
         return isCharged;
+    }
+
+    private void expell()
+    {
+        isCharged = false;
+        chargeTimer = 0f;
+
+        Vector2 Dir  = rodTip.position - player.position;
+        lightningManager.ExpellLightning(rodTip, Dir);
+        moveController.AddExternalForce(-Dir*expellPower, true);
     }
 }

@@ -726,6 +726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ab4bd1b88fea74ab96448551981452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
+  Player: {fileID: 0}
+  CurrentCheckPointPosition: {x: 0, y: 0}
 --- !u!4 &825175477
 Transform:
   m_ObjectHideFlags: 0
@@ -753,7 +755,6 @@ GameObject:
   - component: {fileID: 1067219103}
   - component: {fileID: 1067219104}
   - component: {fileID: 1067219105}
-  - component: {fileID: 1067219106}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -818,9 +819,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d1db36d9294a6418c06ef103634188, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveController
-  moveSpeed: 5
-  jumpHeight: 10
-  MoveInput: {x: 0, y: 0}
+  currentState: 0
+  moveSpeed: 20
+  jumpForce: 10
+  maxSpeed: {x: 5, y: 10}
+  decelerationRate: 20
+  snapDirectionChanges: 1
   groundCheck: {fileID: 274486295}
   groundLayer:
     serializedVersion: 2
@@ -892,29 +896,6 @@ MonoBehaviour:
   m_DefaultActionMap: New action map1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &1067219106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067219100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a87cdbbbf081a6142b0abb1841d82423, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  jumpCount: 0
-  maxJumps: 2
-  MoveInput: {x: 0, y: 0}
-  moveSpeed: 5
-  jumpHeight: 5
-  groundCheck: {fileID: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  checkRadius: 0.2
-  rb: {fileID: 0}
 --- !u!1 &1182166075
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,8 +943,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626ec77d2b2e734d8fdf98f8831d0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RodControls
+  expellPower: 5
   absorbAngle: 25
   player: {fileID: 596794711}
+  lightningManager: {fileID: 0}
   rodTip: {fileID: 1223948065}
   positionOffset: {x: 0, y: 0}
 --- !u!114 &1182166078
@@ -981,7 +964,7 @@ MonoBehaviour:
   player: {fileID: 596794714}
   rod: {fileID: 1269542764}
   rodScript: {fileID: 1182166077}
-  cloud: {fileID: 729974186}
+  cloud: {fileID: 0}
   ground: {fileID: 2117002488}
 --- !u!1 &1223948064
 GameObject:
@@ -1394,3 +1377,4 @@ SceneRoots:
   - {fileID: 1067219101}
   - {fileID: 238695933}
   - {fileID: 825175477}
+  - {fileID: 619394802}

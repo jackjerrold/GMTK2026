@@ -17,7 +17,11 @@ public class RodControls : MonoBehaviour
 
     [SerializeField]
     private Transform player;
+
+
+    public Transform rodTip;
     
+
     [SerializeField]
     private Vector2 positionOffset = Vector2.zero; //Offset from the player (for following the player)
 

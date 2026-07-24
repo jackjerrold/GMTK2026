@@ -6,8 +6,9 @@ public class DrawLightning : MonoBehaviour
     public Transform startPoint;
     public Transform endPoint;
 
-    public int segments = 10;
+    public int segments = 5;
     public float jitterAmount = 0.5f;
+    private float lightningDuration = 1.0f;
 
     private LineRenderer lineRenderer;
     
@@ -19,8 +20,10 @@ public class DrawLightning : MonoBehaviour
 
 
         if (startPoint == null || endPoint == null) return;
-
+        
         GenerateLightning();
+
+        Destroy(gameObject, lightningDuration);
     }
 
 

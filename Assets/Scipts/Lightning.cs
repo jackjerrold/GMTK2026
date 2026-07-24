@@ -9,7 +9,6 @@ public class Lightning : MonoBehaviour
     private GameObject prefab;
 
     private GameObject lightning;
-    private float lightningDuration = 1.0f;
 
     [SerializeField]
     private Transform cloud;
@@ -45,13 +44,14 @@ public class Lightning : MonoBehaviour
         if (timer >= countdown) { 
                 RaycastHit2D ray = Raycast(player.position);
 
-                CreateLightning(ray);
-
                 if (ray.collider == null) { 
                     if (rod.Absorb() == true) {
-                        Destroy(lightning); //Hides the lightning if the rod absorbed it
+                        CreateLightning(rod.rodTip); //Hides the lightning if the rod absorbed it
+                    } else {
+                        CreateLightning(player.transform);
                     }
                 } else {
+                    CreateLightning(ray.transform);
                     /*
                     i got no code to write here cause idk how u want it to break
                     (either js Destroy() or some Break() method for animations)
@@ -80,11 +80,12 @@ public class Lightning : MonoBehaviour
         return ray;
     }
 
-    private void CreateLightning(RaycastHit2D ray) {
+    private void CreateLightning(Transform target) {
+        for (int i = 0; i < 4; i++) {
         lightning = Instantiate(prefab, prefab.transform.position, Quaternion.identity);
         DrawLightning drawLightning = lightning.GetComponent<DrawLightning>();
         drawLightning.startPoint = cloud;
-        drawLightning.endPoint = (ray.collider != null) ? ray.transform : player.transform;
-        Destroy(lightning, lightningDuration);
+        drawLightning.endPoint = target;
+        }
     }
 }

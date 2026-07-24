@@ -6,6 +6,8 @@ public class DrawLightning : MonoBehaviour
     public Transform startPoint;
     public Transform endPoint;
 
+    private Vector2 endPointPosition;
+
     [Header("Lightning Appearance")]
     public int segments = 8;
     public float jitterAmount = 0.5f;
@@ -36,6 +38,8 @@ public class DrawLightning : MonoBehaviour
             return;
         }
 
+        endPointPosition = endPoint.position;
+
         GenerateLightning(Vector2.zero, Vector2.zero, 0, maxDepth);
 
         Destroy(gameObject, lightningDuration);
@@ -44,6 +48,12 @@ public class DrawLightning : MonoBehaviour
     void Update()
     {
         elapsedTime += Time.deltaTime;
+
+        if (endPoint != null)
+        {
+            endPointPosition = endPoint.position;
+        }
+
         AnimateLightning();
     }
 
@@ -53,7 +63,7 @@ public class DrawLightning : MonoBehaviour
         for (int i = 1; i < segments; i++)
         {
             float percentage = i / (float)segments;
-            Vector2 pointOnLine = Vector2.Lerp(startPoint.position, endPoint.position, percentage);
+            Vector2 pointOnLine = Vector2.Lerp(startPoint.position, endPointPosition, percentage);
 
             // Subtle flickering offset
             float flickerOffset = Mathf.Sin(elapsedTime * flickerSpeed + i) * 0.1f * flickerIntensity;

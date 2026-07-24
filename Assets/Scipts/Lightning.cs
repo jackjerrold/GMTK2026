@@ -1,4 +1,6 @@
+using System.Net;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Lightning : MonoBehaviour
 {
@@ -49,20 +51,19 @@ public class Lightning : MonoBehaviour
                 else
                 {
                     CreateLightning(player.transform, Vector2.zero);
-                    TriggerScreenEffects();
                     sceneController.die();
                 }
             }
             else
             {
                 CreateLightning(ray.transform, ray.point);
-                TriggerScreenEffects();
-                /*
-                i got no code to write here cause idk how u want it to break
-                (either js Destroy() or some Break() method for animations)
-                but you can access the object through the RaycastHit2D ray variable above
-                */
+                Destructable destructable = ray.collider.GetComponent<Destructable>();
+                if (destructable != null)
+                {
+                    destructable.Destruct();
+                }
             }
+            TriggerScreenEffects();
             timer = 0f;
         }
     }
@@ -136,5 +137,27 @@ public class Lightning : MonoBehaviour
         drawLightning.segments = segmentVariation;
         drawLightning.jitterAmount = jitterVariation;
         drawLightning.lightningDuration = Random.Range(0.2f, 0.4f); // Vary duration slightly
+    }
+
+    public void ExpellLightning(Transform start, Vector2 Dir)
+    {
+        Vector2 endPosition = (Vector2)start.position + (Dir * 5);
+        GameObject endTransform = new GameObject();
+        endTransform.transform.position = endPosition;
+        endTransform.transform.parent = start;
+
+        // Create single main bolt with random variations
+        int segmentVariation = Random.Range(6, 12);
+        float jitterVariation = Random.Range(0.3f, 0.8f);
+        float lightningDuration = Random.Range(0.2f, 0.4f);
+
+        GameObject lightning = Instantiate(prefab, prefab.transform.position, Quaternion.identity);
+        DrawLightning drawLightning = lightning.GetComponent<DrawLightning>();
+        drawLightning.startPoint = start;
+        drawLightning.endPoint = endTransform.transform;
+        drawLightning.segments = segmentVariation;
+        drawLightning.jitterAmount = jitterVariation;
+        drawLightning.lightningDuration = lightningDuration; // Vary duration slightly
+        Destroy(endTransform, lightningDuration);
     }
 }

@@ -433,8 +433,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1595219825700998118}
   - component: {fileID: 3478735946923210316}
-  - component: {fileID: 1426817317186463214}
   - component: {fileID: 5879464106035191325}
+  - component: {fileID: 1426817317186463214}
+  - component: {fileID: 6780068394794610516}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -488,26 +489,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1426817317186463214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6329210535672743802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58d1db36d9294a6418c06ef103634188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveController
-  moveSpeed: 20
-  jumpForce: 7
-  maxSpeed: {x: 5, y: 10}
-  groundCheck: {fileID: 8573593549687125245}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 256
-  checkRadius: 0.2
 --- !u!114 &5879464106035191325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,6 +555,43 @@ MonoBehaviour:
   m_DefaultActionMap: New action map1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1426817317186463214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329210535672743802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d1db36d9294a6418c06ef103634188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveController
+  currentState: 0
+  moveSpeed: 20
+  jumpForce: 7
+  maxSpeed: {x: 5, y: 10}
+  decelerationRate: 20
+  snapDirectionChanges: 1
+  groundCheck: {fileID: 8573593549687125245}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  checkRadius: 0.2
+--- !u!114 &6780068394794610516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6329210535672743802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1d8cd4459804d4bbc5764fd7d65514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::animationManager
+  moveController: {fileID: 1426817317186463214}
+  animator: {fileID: 3893131322659040428}
 --- !u!1 &6828304935655797770
 GameObject:
   m_ObjectHideFlags: 0

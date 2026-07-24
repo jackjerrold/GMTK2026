@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class RodControls : MonoBehaviour
 {
+    public RodInGround RodInGroundScript;
+
     private Camera mainCamera; //Used to track mouse
 
     private bool canAbsorb = false;
@@ -40,6 +42,9 @@ public class RodControls : MonoBehaviour
     
     void Update()
     {
+        if (!RodInGroundScript.isTaken) return;
+
+
         if (player != null) { //This if part is all for the moving and rotating the rod to the player and mouse
             Vector2 playerPosition = player.position;
 

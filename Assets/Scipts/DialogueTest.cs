@@ -1,6 +1,7 @@
 using System.Collections;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DialogueTest : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class DialogueTest : MonoBehaviour
 
     void Update()
     {
-        if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
+        if (isDialogueActive && Mouse.current.leftButton.wasPressedThisFrame)
         {
             if (textDisplay.text != testLines[currentLineIndex])
             {

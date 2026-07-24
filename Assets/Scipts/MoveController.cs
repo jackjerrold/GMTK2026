@@ -18,6 +18,8 @@ public class MoveController : MonoBehaviour
     // Force accumulator - allows external forces to coexist with input movement
     private Vector2 externalForce = Vector2.zero;
 
+    private Vector2 MoveInput;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

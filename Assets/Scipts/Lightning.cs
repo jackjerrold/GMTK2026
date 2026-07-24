@@ -44,7 +44,7 @@ public class Lightning : MonoBehaviour
         if (timer >= countdown) { 
                 RaycastHit2D ray = Raycast(player.position);
 
-                if (ray.collider == null) { 
+                if (ray.collider == null) {
                     if (rod.Absorb() == true) {
                         CreateLightning(rod.rodTip); //Hides the lightning if the rod absorbed it
                     } else {

@@ -8,7 +8,10 @@ public class MoveController : MonoBehaviour
         Idle,
         Running,
         Jumping,
-        Falling
+        Falling,
+        Dead
+
+
 
     }
     
@@ -42,6 +45,9 @@ public class MoveController : MonoBehaviour
     private Vector2 externalForce = Vector2.zero;
 
     private Vector2 MoveInput;
+
+    private float deathTimer = 0f;
+    private const float DEATH_DURATION = 1f;
 
     public MovementState CurrentState => currentState;
     private void Awake()
@@ -85,6 +91,13 @@ public class MoveController : MonoBehaviour
         );
         rb.linearVelocity = clampedVelocity;
     }
+
+    public void TriggerDeath()
+    {
+        currentState = MovementState.Dead;
+        deathTimer = DEATH_DURATION;
+        rb.linearVelocity = Vector2.zero;
+    }
     private void DetermineState()
     {
         bool grounded = IsGrounded();
@@ -101,6 +114,16 @@ public class MoveController : MonoBehaviour
     private void Update()
     {
         DetermineState();
+
+        if (currentState == MovementState.Dead)
+        {
+            deathTimer -= Time.deltaTime;
+            if (deathTimer <= 0f)
+            {
+                currentState = MovementState.Idle;
+            }
+            return;
+        }
     }
 
     public void OnRun(InputAction.CallbackContext ctx)

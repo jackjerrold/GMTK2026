@@ -594,7 +594,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -619,7 +619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveController
   moveSpeed: 5
-  jumpHeight: 5
+  jumpHeight: 10
   MoveInput: {x: 0, y: 0}
   groundCheck: {fileID: 274486295}
   groundLayer:

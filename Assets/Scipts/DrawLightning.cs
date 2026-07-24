@@ -14,7 +14,7 @@ public class DrawLightning : MonoBehaviour
 
     [Header("Animation")]
     [SerializeField]
-    private float lightningDuration = 0.3f;
+    public float lightningDuration = 0.3f;
     public float flickerSpeed = 30f;
     public float flickerIntensity = 0.5f;
     public AnimationCurve widthCurve;
@@ -84,7 +84,7 @@ public class DrawLightning : MonoBehaviour
 
     private void GenerateLightning(Vector2 directionOffset, Vector2 positionOffset, int currentDepth, int maxDepth)
     {
-        lineRenderer.SetPosition(0, startPoint.position + positionOffset);
+        lineRenderer.SetPosition(0, (Vector2)startPoint.position + positionOffset);
 
         for (int i = 1; i < segments; i++)
         {
@@ -105,7 +105,7 @@ public class DrawLightning : MonoBehaviour
             }
         }
 
-        lineRenderer.SetPosition(segments, endPoint.position + positionOffset);
+        lineRenderer.SetPosition(segments, (Vector2)endPoint.position + positionOffset);
     }
 
     private void CreateBranch(Vector2 branchStart, float percentageAlongBolt, int depth)

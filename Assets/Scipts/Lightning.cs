@@ -109,11 +109,6 @@ public class Lightning : MonoBehaviour
         mainCamera.transform.localPosition = originalPos;
     }
 
-    void FixedUpdate()
-    {
-        Debug.Log($"Timer: {timer}");
-    }
-
     private RaycastHit2D Raycast(Vector2 startPosition)
     {
         Vector2 targetPosition = new Vector2(cloud.position.x, cloud.position.y);

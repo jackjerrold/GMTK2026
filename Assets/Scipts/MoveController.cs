@@ -10,9 +10,6 @@ public class MoveController : MonoBehaviour
         Jumping,
         Falling,
         Dead
-
-
-
     }
     
     [Header("State Machine")]
@@ -75,7 +72,11 @@ public class MoveController : MonoBehaviour
         // Apply horizontal input as acceleration (not velocity override)
         float targetSpeed = MoveInput.x * moveSpeed;
         float speedDiff = targetSpeed - rb.linearVelocity.x;
-        rb.AddForce(new Vector2(speedDiff, 0f), ForceMode2D.Force);
+
+        if ((speedDiff > 0 && rb.linearVelocity.x < maxSpeed.x) || (speedDiff < 0 && rb.linearVelocity.x > -maxSpeed.x))
+        {
+            rb.AddForce(new Vector2(speedDiff, 0f), ForceMode2D.Force);
+        }
 
         // Apply accumulated external forces (e.g., knockback, wind, etc.)
         if (externalForce != Vector2.zero)
@@ -86,7 +87,8 @@ public class MoveController : MonoBehaviour
 
         // Clamp velocity to max speeds
         Vector2 clampedVelocity = new Vector2(
-            Mathf.Clamp(rb.linearVelocity.x, -maxSpeed.x, maxSpeed.x),
+            //Mathf.Clamp(rb.linearVelocity.x, -maxSpeed.x, maxSpeed.x),
+            rb.linearVelocity.x,
             Mathf.Clamp(rb.linearVelocity.y, -maxSpeed.y, maxSpeed.y)
         );
         rb.linearVelocity = clampedVelocity;
@@ -113,7 +115,6 @@ public class MoveController : MonoBehaviour
     }
     private void Update()
     {
-        DetermineState();
 
         if (currentState == MovementState.Dead)
         {
@@ -123,6 +124,10 @@ public class MoveController : MonoBehaviour
                 currentState = MovementState.Idle;
             }
             return;
+        }
+        else
+        {
+            DetermineState();
         }
     }
 

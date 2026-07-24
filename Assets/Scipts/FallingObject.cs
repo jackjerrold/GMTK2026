@@ -52,7 +52,6 @@ public class FallingObject : MonoBehaviour
             }
 
             float percentageComplete = elapsedTime / dropTime;
-            Debug.Log($"percentageComplete: {percentageComplete}");
             transform.position = Vector3.Lerp(startPosition, endPosition, curve.Evaluate(percentageComplete));
 
             if ((Vector2)transform.position == endPosition)

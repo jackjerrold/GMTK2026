@@ -570,7 +570,7 @@ MonoBehaviour:
   currentState: 0
   moveSpeed: 20
   jumpForce: 7
-  maxSpeed: {x: 5, y: 10}
+  maxSpeed: {x: 6, y: 10}
   decelerationRate: 20
   snapDirectionChanges: 1
   groundCheck: {fileID: 8573593549687125245}
@@ -638,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626ec77d2b2e734d8fdf98f8831d0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RodControls
-  expellPower: 100
+  expellPower: 7
   absorbAngle: 25
   player: {fileID: 1595219825700998118}
   lightningManager: {fileID: 0}

@@ -23,8 +23,6 @@ public class MoveController : MonoBehaviour
     {
 
         MoveInput = ctx.ReadValue<Vector2>();
-
-        
     }
 
     public void OnJump(InputAction.CallbackContext ctx)

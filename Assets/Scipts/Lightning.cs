@@ -6,6 +6,9 @@ public class Lightning : MonoBehaviour
     private Transform player;
 
     [SerializeField]
+    private SceneController sceneController;
+
+    [SerializeField]
     private GameObject prefab;
 
     private GameObject lightning;
@@ -49,6 +52,7 @@ public class Lightning : MonoBehaviour
                         CreateLightning(rod.rodTip); //Hides the lightning if the rod absorbed it
                     } else {
                         CreateLightning(player.transform);
+                        sceneController.die();
                     }
                 } else {
                     CreateLightning(ray.transform);

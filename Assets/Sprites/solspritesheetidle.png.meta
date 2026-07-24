@@ -1,0 +1,1352 @@
+fileFormatVersion: 2
+guid: 4d3b887db4344414faecd090d03f6969
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8731753684127356514
+    second: solspritesheetidle_0
+  - first:
+      213: -7783716832888662950
+    second: solspritesheetidle_1
+  - first:
+      213: -52519427041588964
+    second: solspritesheetidle_2
+  - first:
+      213: 3198519455159975184
+    second: solspritesheetidle_3
+  - first:
+      213: 5822823914860785493
+    second: solspritesheetidle_4
+  - first:
+      213: 4844696624575515014
+    second: solspritesheetidle_5
+  - first:
+      213: 6003122941510654465
+    second: solspritesheetidle_6
+  - first:
+      213: 69437094444123582
+    second: solspritesheetidle_7
+  - first:
+      213: 1707068877902648594
+    second: solspritesheetidle_8
+  - first:
+      213: -5912984458489068503
+    second: solspritesheetidle_9
+  - first:
+      213: 5047071347075357683
+    second: solspritesheetidle_10
+  - first:
+      213: -5086297351442149373
+    second: solspritesheetidle_11
+  - first:
+      213: 2964757228692344265
+    second: solspritesheetidle_12
+  - first:
+      213: -6407695013736876525
+    second: solspritesheetidle_13
+  - first:
+      213: -7713750572908565766
+    second: solspritesheetidle_14
+  - first:
+      213: -6543688525945351920
+    second: solspritesheetidle_15
+  - first:
+      213: 4972975485687428183
+    second: solspritesheetidle_16
+  - first:
+      213: -2801810068874143765
+    second: solspritesheetidle_17
+  - first:
+      213: 7962786761536427241
+    second: solspritesheetidle_18
+  - first:
+      213: -7262661462097453730
+    second: solspritesheetidle_19
+  - first:
+      213: -80950412816799874
+    second: solspritesheetidle_20
+  - first:
+      213: -2988740163481043
+    second: solspritesheetidle_21
+  - first:
+      213: 7742877458341434771
+    second: solspritesheetidle_22
+  - first:
+      213: -8291655802775445869
+    second: solspritesheetidle_23
+  - first:
+      213: 5667559607589189814
+    second: solspritesheetidle_24
+  - first:
+      213: 3282568364039793511
+    second: solspritesheetidle_25
+  - first:
+      213: -3032146610042660703
+    second: solspritesheetidle_26
+  - first:
+      213: 7661685347475951460
+    second: solspritesheetidle_27
+  - first:
+      213: -1779819420417783831
+    second: solspritesheetidle_28
+  - first:
+      213: 1323597335712574744
+    second: solspritesheetidle_29
+  - first:
+      213: 318552302394811291
+    second: solspritesheetidle_30
+  - first:
+      213: -4998584491104945256
+    second: solspritesheetidle_31
+  - first:
+      213: 207676681472106027
+    second: solspritesheetidle_32
+  - first:
+      213: 7148725827808132546
+    second: solspritesheetidle_33
+  - first:
+      213: 6069317472330319247
+    second: solspritesheetidle_34
+  - first:
+      213: -440537415744825322
+    second: solspritesheetidle_35
+  - first:
+      213: -1376116044567681729
+    second: solspritesheetidle_36
+  - first:
+      213: -7559862723258488584
+    second: solspritesheetidle_37
+  - first:
+      213: 906719411050083861
+    second: solspritesheetidle_38
+  - first:
+      213: -5261902021131052034
+    second: solspritesheetidle_39
+  - first:
+      213: 2301011362561948209
+    second: solspritesheetidle_40
+  - first:
+      213: -1021016277463008578
+    second: solspritesheetidle_41
+  - first:
+      213: -5737282015509341620
+    second: solspritesheetidle_42
+  - first:
+      213: 6814154153513625277
+    second: solspritesheetidle_43
+  - first:
+      213: -1842283603871660399
+    second: solspritesheetidle_44
+  - first:
+      213: -486553980043000477
+    second: solspritesheetidle_45
+  - first:
+      213: -5136337463009116714
+    second: solspritesheetidle_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: solspritesheetidle_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1966
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99616f794492d680800000000000000
+      internalID: -8731753684127356514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_1
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1966
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a545177c7ceaaf390800000000000000
+      internalID: -7783716832888662950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1966
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19016ffbd9654ff0800000000000000
+      internalID: -52519427041588964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_3
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1966
+        width: 176
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d7cfb7f7c636c20800000000000000
+      internalID: 3198519455159975184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_4
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1966
+        width: 176
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f2deaff73dec050800000000000000
+      internalID: 5822823914860785493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_5
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 1966
+        width: 176
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6898b5869e1db3340800000000000000
+      internalID: 4844696624575515014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_6
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 1966
+        width: 176
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a9db762806f4350800000000000000
+      internalID: 6003122941510654465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1642
+        width: 176
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5c3946ba0b6f000800000000000000
+      internalID: 69437094444123582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_8
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1642
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215138a991ab0b710800000000000000
+      internalID: 1707068877902648594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_9
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1642
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9248a5d96fbd0fda0800000000000000
+      internalID: -5912984458489068503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_10
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 1642
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb9a7e46acca0640800000000000000
+      internalID: 5047071347075357683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_11
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1642
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300d749d187d969b0800000000000000
+      internalID: -5086297351442149373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_12
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1642
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd8a75ddfee42920800000000000000
+      internalID: 2964757228692344265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_13
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1642
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316fb2d955b4317a0800000000000000
+      internalID: -6407695013736876525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1318
+        width: 175
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaa1df19b043f490800000000000000
+      internalID: -7713750572908565766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_15
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1318
+        width: 176
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0115a32a4f52035a0800000000000000
+      internalID: -6543688525945351920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1318
+        width: 176
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754ff153bde830540800000000000000
+      internalID: 4972975485687428183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_17
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1318
+        width: 177
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7d4a44698fd19d0800000000000000
+      internalID: -2801810068874143765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_18
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1318
+        width: 175
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4df87fe50818e60800000000000000
+      internalID: 7962786761536427241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_19
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1318
+        width: 175
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d13c321e7d53b90800000000000000
+      internalID: -7262661462097453730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_20
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 1318
+        width: 175
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7722a7470860eef0800000000000000
+      internalID: -80950412816799874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_21
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 994
+        width: 176
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22da34b1c165fff0800000000000000
+      internalID: -2988740163481043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_22
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 994
+        width: 176
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39512db560a347b60800000000000000
+      internalID: 7742877458341434771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_23
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 994
+        width: 176
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e53cb7afe1eec80800000000000000
+      internalID: -8291655802775445869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_24
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 994
+        width: 176
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8b4b16f6737ae40800000000000000
+      internalID: 5667559607589189814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_25
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 994
+        width: 176
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76be68909860e8d20800000000000000
+      internalID: 3282568364039793511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_26
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 994
+        width: 175
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8908129b6abe5d0800000000000000
+      internalID: -3032146610042660703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_27
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 994
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f8e1dea36c35a60800000000000000
+      internalID: 7661685347475951460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_28
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e708a1caafcc47e0800000000000000
+      internalID: -1779819420417783831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_29
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d2dcc93cc5e5210800000000000000
+      internalID: 1323597335712574744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_30
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9320aa91a9bb6400800000000000000
+      internalID: 318552302394811291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_31
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89bb9e393e571aab0800000000000000
+      internalID: -4998584491104945256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_32
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ed64b67d0d1e200800000000000000
+      internalID: 207676681472106027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_33
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cdf92bc340653360800000000000000
+      internalID: 7148725827808132546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_34
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 670
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85025f951c8a3450800000000000000
+      internalID: 6069317472330319247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_35
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618d240fd85e2e9f0800000000000000
+      internalID: -440537415744825322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_36
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35e3d99fbd07ece0800000000000000
+      internalID: -1376116044567681729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_37
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8e57538e8f51790800000000000000
+      internalID: -7559862723258488584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_38
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51677961080559c00800000000000000
+      internalID: 906719411050083861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_39
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbd2939df7f9f6b0800000000000000
+      internalID: -5261902021131052034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_40
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a74a994a5deef10800000000000000
+      internalID: 2301011362561948209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_41
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 346
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebafcefea1f94d1f0800000000000000
+      internalID: -1021016277463008578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_42
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 22
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a145187641160b0800000000000000
+      internalID: -5737282015509341620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_43
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 22
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6aee4891db09e50800000000000000
+      internalID: 6814154153513625277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_44
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 22
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19604b7b2d4ee66e0800000000000000
+      internalID: -1842283603871660399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_45
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 22
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3650c77abb96f39f0800000000000000
+      internalID: -486553980043000477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetidle_46
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 22
+        width: 175
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd7fc67a4018b8b0800000000000000
+      internalID: -5136337463009116714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      solspritesheetidle_0: -8731753684127356514
+      solspritesheetidle_1: -7783716832888662950
+      solspritesheetidle_10: 5047071347075357683
+      solspritesheetidle_11: -5086297351442149373
+      solspritesheetidle_12: 2964757228692344265
+      solspritesheetidle_13: -6407695013736876525
+      solspritesheetidle_14: -7713750572908565766
+      solspritesheetidle_15: -6543688525945351920
+      solspritesheetidle_16: 4972975485687428183
+      solspritesheetidle_17: -2801810068874143765
+      solspritesheetidle_18: 7962786761536427241
+      solspritesheetidle_19: -7262661462097453730
+      solspritesheetidle_2: -52519427041588964
+      solspritesheetidle_20: -80950412816799874
+      solspritesheetidle_21: -2988740163481043
+      solspritesheetidle_22: 7742877458341434771
+      solspritesheetidle_23: -8291655802775445869
+      solspritesheetidle_24: 5667559607589189814
+      solspritesheetidle_25: 3282568364039793511
+      solspritesheetidle_26: -3032146610042660703
+      solspritesheetidle_27: 7661685347475951460
+      solspritesheetidle_28: -1779819420417783831
+      solspritesheetidle_29: 1323597335712574744
+      solspritesheetidle_3: 3198519455159975184
+      solspritesheetidle_30: 318552302394811291
+      solspritesheetidle_31: -4998584491104945256
+      solspritesheetidle_32: 207676681472106027
+      solspritesheetidle_33: 7148725827808132546
+      solspritesheetidle_34: 6069317472330319247
+      solspritesheetidle_35: -440537415744825322
+      solspritesheetidle_36: -1376116044567681729
+      solspritesheetidle_37: -7559862723258488584
+      solspritesheetidle_38: 906719411050083861
+      solspritesheetidle_39: -5261902021131052034
+      solspritesheetidle_4: 5822823914860785493
+      solspritesheetidle_40: 2301011362561948209
+      solspritesheetidle_41: -1021016277463008578
+      solspritesheetidle_42: -5737282015509341620
+      solspritesheetidle_43: 6814154153513625277
+      solspritesheetidle_44: -1842283603871660399
+      solspritesheetidle_45: -486553980043000477
+      solspritesheetidle_46: -5136337463009116714
+      solspritesheetidle_5: 4844696624575515014
+      solspritesheetidle_6: 6003122941510654465
+      solspritesheetidle_7: 69437094444123582
+      solspritesheetidle_8: 1707068877902648594
+      solspritesheetidle_9: -5912984458489068503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

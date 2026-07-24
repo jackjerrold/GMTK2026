@@ -4,7 +4,8 @@ public class FallingObject : MonoBehaviour
 {
     public float dropTime = 1f;
     //i will be damn suprised if levels go below -40 on the Y axis but just in case.
-    public Vector2 endPosition;
+    private Vector2 endPosition;
+    public Vector2 RelitiveEndPos;
     public float respawnTime = 1f;
     public float waitBeforeDrop = 1f;
 
@@ -17,7 +18,8 @@ public class FallingObject : MonoBehaviour
     [SerializeField] private AnimationCurve curve;
     private void Start()
     {
-        startPosition= transform.position;
+        startPosition = transform.position;
+        endPosition = (Vector2)transform.position + RelitiveEndPos;
     }
 
     void Update()

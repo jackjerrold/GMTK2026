@@ -8,6 +8,8 @@ public class RodControls : MonoBehaviour
     private bool canAbsorb = false;
     private bool isCharged = false;
 
+    public float expellPower = 5;
+
     //Used to track the time isCharged is true
     private float chargeDuration = 1.5f; 
     private float chargeTimer = 0f;
@@ -17,6 +19,7 @@ public class RodControls : MonoBehaviour
 
     [SerializeField]
     private Transform player;
+    private Rigidbody2D playerRB;
 
 
     public Transform rodTip;
@@ -28,6 +31,7 @@ public class RodControls : MonoBehaviour
     void Start()
     {
        mainCamera = Camera.main;
+       playerRB = player.GetComponent<Rigidbody2D>();
     }
 
     
@@ -54,7 +58,7 @@ public class RodControls : MonoBehaviour
             if (chargeTimer >= chargeDuration) {
                 isCharged = false;
                 chargeTimer = 0f;
-                //Add something more after the timer runs out but idk rn
+                expell();
             }
         }
     }
@@ -80,5 +84,11 @@ public class RodControls : MonoBehaviour
 
     public bool IsCharged() { //Just for the colouring file
         return isCharged;
+    }
+
+    private void expell()
+    {
+        Vector2 Dir  = player.position - rodTip.position;
+        playerRB.AddForce(Dir * 5,ForceMode2D.Impulse);
     }
 }

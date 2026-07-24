@@ -10,13 +10,14 @@ public class MoveController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public float checkRadius = 0.2f;
+    public Vector2 MaxSpeed;
 
     private Rigidbody2D rb;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-      rb = GetComponent<Rigidbody2D>();  
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void OnRun(InputAction.CallbackContext ctx)
@@ -46,7 +47,10 @@ public class MoveController : MonoBehaviour
     {
       if (rb != null)
       {
-        rb.linearVelocity = new Vector2(MoveInput.x * moveSpeed, rb.linearVelocity.y);
+            rb.linearVelocity += new Vector2(MoveInput.x * moveSpeed, 0);
+            float xVel = Mathf.Clamp(rb.linearVelocity.x, -MaxSpeed.x, MaxSpeed.x);
+            float yVel = Mathf.Clamp(rb.linearVelocity.y, -MaxSpeed.y, MaxSpeed.y);
+            rb.linearVelocity = new Vector2(xVel, yVel);
       }
 
     }

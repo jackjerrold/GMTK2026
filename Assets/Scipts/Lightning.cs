@@ -31,7 +31,7 @@ public class Lightning : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        transform.position = new Vector2(player.position.x, player.position.y);
+        transform.position = new Vector2(player.position.x, transform.position.y);
         //cloud.position = new Vector2(player.position.x, player.position.y);
 
         /*

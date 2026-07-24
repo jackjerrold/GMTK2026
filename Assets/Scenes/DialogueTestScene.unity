@@ -476,8 +476,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -545,7 +545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -40}
+  m_AnchoredPosition: {x: -10, y: -35}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1998241008
@@ -561,6 +561,7 @@ GameObject:
   - component: {fileID: 1998241011}
   - component: {fileID: 1998241010}
   - component: {fileID: 1998241009}
+  - component: {fileID: 1998241014}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -582,11 +583,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueTest
   textDisplay: {fileID: 916350311}
   dialoguePanel: {fileID: 551781812}
+  audioSource: {fileID: 1998241014}
+  typeSound: {fileID: 8300000, guid: 9bbeaa28c4e5a2d4aa749e1d2a2bb5e7, type: 3}
   testLines:
-  - hello
-  - I want to rip your guts out and roast them over a campfire then feed them to
-    my dogs and watch the remains of your body decay.
-  - goodbye
+  - 'Sol (Internal): Many people talk about the treasure of living... fulfilling
+    dreams before time strikes and calls for death.'
+  - 'Sol (Internal): I wouldn''t know. For as long as I remember, I have been working
+    for him.'
+  - 'Sol (Internal): He named me Sol, and made me his slave. I have done nothing
+    in life but carry out his tasks.'
+  - 'Mage: SOL! Are you meaning to give me my mission updates.'
+  - 'Sol: Oh uh yes sir, in terms of mission success... there is no success.'
+  - 'Mage: Absolutely Scandalous! Have I not taught you the path to success, AND
+    YET YOU STILL THRIVE TO BE THE FAILURE YOU ARE DESTINED TO BE.'
+  - 'Sol: (This knob) I am sorry sir, it will not happen again. Probably. Maybe.
+    I''m actually not certain- '
+  - 'Mage: SILENCE! You insolent orphan. I give you meals, a roof over your head,
+    and you still choose to speak your pity jokes. '
+  - 'Sol: You expect me to be grateful to you? Since the day I existed you have made
+    me your slave! I am more than just your worker, I deserve a life! '
+  - 'Mage: ... You dare oppose me with such nonsense. You yearn for a life that you
+    will never succeed in. '
+  - 'Sol: I''d rather take my chances than live another second in your tyranny. '
+  - 'Mage: FINE! Go on and try live your petty life, but you will never escape my
+    wrath. From this day forward the sky itself will strike you down.  '
+  - 'Mage: Now scaddle away. And I''ll be waiting for you to crawl back to me. '
+  - 'Sol: Well... Crap- '
   textSpeed: 0.05
 --- !u!114 &1998241010
 MonoBehaviour:
@@ -672,6 +694,103 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!82 &1998241014
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998241008}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

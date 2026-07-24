@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 1067219106}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveController
   moveSpeed: 5
-  jumpHeight: 5
+  jumpHeight: 10
   MoveInput: {x: 0, y: 0}
   groundCheck: {fileID: 274486295}
   groundLayer:
@@ -1389,7 +1389,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
-  - {fileID: 619394802}
   - {fileID: 2117002489}
   - {fileID: 2103330848}
   - {fileID: 1067219101}

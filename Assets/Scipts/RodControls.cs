@@ -19,8 +19,11 @@ public class RodControls : MonoBehaviour
 
     [SerializeField]
     private Transform player;
+
     private MoveController moveController;
 
+    [SerializeField]
+    private Lightning lightningManager;
 
     public Transform rodTip;
     
@@ -55,9 +58,8 @@ public class RodControls : MonoBehaviour
         if (isCharged) { //isCharged logic with timer
             chargeTimer += Time.deltaTime;
 
-            if (chargeTimer >= chargeDuration) {
-                isCharged = false;
-                chargeTimer = 0f;
+            if (chargeTimer >= chargeDuration || Mouse.current.leftButton.wasPressedThisFrame)
+            {
                 expell();
             }
         }
@@ -65,7 +67,7 @@ public class RodControls : MonoBehaviour
     
     private void RotateToMouse() {
         if (Mouse.current == null || mainCamera == null) return; {
-            //Checking and getting all the info from the mouse into x, y coords on the game
+            //Checking and getting all the info from the mouse intss x, y coords on the games
             Vector2 mousePosition = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue()); 
             Vector2 direction = mousePosition - (Vector2)transform.position;
             
@@ -88,7 +90,11 @@ public class RodControls : MonoBehaviour
 
     private void expell()
     {
-        Vector2 Dir  = player.position - rodTip.position;
-        moveController.AddExternalForce(Dir*expellPower, true);
+        isCharged = false;
+        chargeTimer = 0f;
+
+        Vector2 Dir  = rodTip.position - player.position;
+        lightningManager.ExpellLightning(rodTip, Dir);
+        moveController.AddExternalForce(-Dir*expellPower, true);
     }
 }

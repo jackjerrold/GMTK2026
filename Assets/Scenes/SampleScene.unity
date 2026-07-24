@@ -489,7 +489,7 @@ MonoBehaviour:
   player: {fileID: 1067219101}
   isTaken: 0
   rodInGround: {fileID: 938130736}
-  rod: {fileID: 1269542762}
+  rod: {fileID: 1182166075}
 --- !u!1 &596794710
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +872,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.69803923, g: 0.29411766, b: 0.007843138, a: 1}
@@ -1085,7 +1085,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2626ec77d2b2e734d8fdf98f8831d0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RodControls
-  RodInGroundScript: {fileID: 547993516}
   expellPower: 5
   absorbAngle: 25
   player: {fileID: 596794711}
@@ -1311,7 +1310,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 0.4433962, g: 0.21233201, b: 0, a: 1}

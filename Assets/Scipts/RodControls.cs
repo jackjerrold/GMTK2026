@@ -19,7 +19,7 @@ public class RodControls : MonoBehaviour
 
     [SerializeField]
     private Transform player;
-    private Rigidbody2D playerRB;
+    private MoveController moveController;
 
 
     public Transform rodTip;
@@ -31,7 +31,7 @@ public class RodControls : MonoBehaviour
     void Start()
     {
        mainCamera = Camera.main;
-       playerRB = player.GetComponent<Rigidbody2D>();
+       moveController = player.GetComponent<MoveController>();
     }
 
     
@@ -89,6 +89,6 @@ public class RodControls : MonoBehaviour
     private void expell()
     {
         Vector2 Dir  = player.position - rodTip.position;
-        playerRB.AddForce(Dir * 5,ForceMode2D.Impulse);
+        moveController.AddExternalForce(Dir*expellPower, true);
     }
 }

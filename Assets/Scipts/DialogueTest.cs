@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class DialogueTest : MonoBehaviour
 {
@@ -11,7 +12,9 @@ public class DialogueTest : MonoBehaviour
     public GameObject dialoguePanel;
     public AudioSource audioSource;
     public AudioClip typeSound;
-    public float startDelay = 2.0f;
+    public Image fadeImage;
+    public float fadeDuration = 2f;
+    public float startDelay = 4f;
     public MonoBehaviour playerMovementScript;
     public Camera mainCamera;
     public Transform solTransform;
@@ -40,6 +43,13 @@ public class DialogueTest : MonoBehaviour
         if (playerMovementScript != null)
         {
             playerMovementScript.enabled = false;
+        }
+        if (fadeImage != null)
+        {
+            Color c = fadeImage.color;
+            c.a = 1f;
+            fadeImage.color = c;
+            StartCoroutine(FadeFromBlack());
         }
         StartCoroutine(StartDialogueWithDelay());
     }
@@ -138,11 +148,49 @@ public class DialogueTest : MonoBehaviour
         else
         {
             StopTypeAudio();
-            textDisplay.text = "";
-            dialoguePanel.SetActive(false);
+            if (textDisplay != null) textDisplay.text = "";
+            if (dialoguePanel != null) dialoguePanel.SetActive(false);
             isDialogueActive = false;
             currentCameraTarget = null;
-            if (playerMovementScript != null) playerMovementScript.enabled = true;
+            StartCoroutine(FadeToBlack());
+        }
+    }
+
+    IEnumerator FadeFromBlack()
+    {
+        float timer = 0f;
+        Color color = fadeImage.color;
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            color.a = Mathf.Lerp(1f, 0f, timer / fadeDuration);
+            fadeImage.color = color;
+            yield return null;
+        }
+        color.a = 0f;
+        fadeImage.color = color;
+    }
+
+    IEnumerator FadeToBlack()
+    {
+        if (fadeImage != null)
+        {
+            float timer = 0f;
+            Color color = fadeImage.color;
+
+            while (timer < fadeDuration)
+            {
+                timer += Time.deltaTime;
+                color.a = Mathf.Lerp(0f, 1f, timer / fadeDuration);
+                fadeImage.color = color;
+                yield return null;
+            }
+            color.a = 1f;
+            fadeImage.color = color;
+        }
+        if (playerMovementScript != null)
+        {
+            playerMovementScript.enabled = true;
         }
     }
 

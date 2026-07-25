@@ -23,6 +23,7 @@ public class MoveController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
     public Vector2 maxSpeed = new Vector2(5f, 10f);
+    public float coyoteTime = 0.15f;
 
     [Header("Friction Settings")]
     [Tooltip("Higher numbers mean faster stops when releasing input.")]
@@ -126,7 +127,16 @@ public class MoveController : MonoBehaviour
         if (MoveInput.x > 0) { PlayerSR.flipX = true; }
         if (MoveInput.x < 0) { PlayerSR.flipX = false; }
 
+        if (!IsGrounded())
+        {
+            coyoteTime -= Time.deltaTime;
+        }
+        else
+        {
+            coyoteTime = 0.15f;
+        }
 
+        
         if (currentState == MovementState.Dead)
         {
             deathTimer -= Time.deltaTime;
@@ -158,11 +168,12 @@ public class MoveController : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed && IsGrounded())
+        if (ctx.performed && IsGrounded() || coyoteTime > 0)
         {
             // Zero vertical velocity first to get consistent jumps
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            coyoteTime = 0f;
         }
     }
 

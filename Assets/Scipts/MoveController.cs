@@ -16,6 +16,7 @@ public class MoveController : MonoBehaviour
     [SerializeField] private MovementState currentState = MovementState.Idle;
 
     public Vector2 returnCheckPoint;
+    public Collider2D playerCollider;
     
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -98,6 +99,9 @@ public class MoveController : MonoBehaviour
 
         currentState = MovementState.Dead;
         deathTimer = DEATH_DURATION;
+
+        playerCollider.enabled = false;
+
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(Vector2.up * 7, ForceMode2D.Impulse);
         rb.constraints = RigidbodyConstraints2D.None;
@@ -126,6 +130,8 @@ public class MoveController : MonoBehaviour
             {
                 transform.position = returnCheckPoint;
                 currentState = MovementState.Idle;
+
+                playerCollider.enabled = true;
 
                 rb.linearVelocity = Vector2.zero;
                 rb.angularVelocity = 0;

@@ -116,10 +116,10 @@ TextureImporter:
       name: magesprite_0
       rect:
         serializedVersion: 2
-        x: 168
-        y: 125
-        width: 620
-        height: 682
+        x: 73
+        y: 39
+        width: 265
+        height: 468
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

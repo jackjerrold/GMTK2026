@@ -111,7 +111,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1114608717
-  m_SortingLayer: 1
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8731753684127356514, guid: 4d3b887db4344414faecd090d03f6969, type: 3}
@@ -569,7 +569,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MoveController
   currentState: 0
   returnCheckPoint: {x: 0, y: 0}
-  playerCollider: {fileID: 0}
+  playerCollider: {fileID: 2903033463817620301}
+  PlayerSprite: {fileID: 4128762305125864304}
   moveSpeed: 20
   jumpForce: 7
   maxSpeed: {x: 6, y: 10}

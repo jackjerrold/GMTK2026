@@ -1,24 +1,30 @@
 using UnityEngine;
 
-public class Parallax : MonoBehaviour
+public class ParallaxBackground : MonoBehaviour
 {
+    [Range(0f, 1f)]
+    public float parallaxEffect = 0.5f;
 
-    private Vector2 startPos;
+    private Transform cameraTransform;
+    private Vector3 lastCameraPosition;
 
-    public float offsetX = 0f;
-    public float offsetY = 0f;
-    public Camera cam;
-    public float parallaxStrength = 1.0f;
     void Start()
     {
-        startPos = transform.position;
-        cam = Camera.main;
+        cameraTransform = Camera.main.transform;
+        lastCameraPosition = cameraTransform.position;
     }
 
-
-    void Update()
+    void LateUpdate()
     {
-        //float distance = cam.transform.position * parallaxStrength;
-        transform.position = ((Vector2)cam.transform.position * parallaxStrength) + new Vector2 (offsetX, offsetY);
+        Vector3 cameraMovement = cameraTransform.position - lastCameraPosition;
+
+        // Move the background based on how much the camera moved
+        transform.position += new Vector3(
+            cameraMovement.x * parallaxEffect,
+            cameraMovement.y * parallaxEffect,
+            0f
+        );
+
+        lastCameraPosition = cameraTransform.position;
     }
 }

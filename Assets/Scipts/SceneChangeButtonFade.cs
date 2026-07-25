@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChangeButton : MonoBehaviour
+public class SceneChangeButtonFade : MonoBehaviour
 { 
     // can pass a scene name to it from code
     public void LoadSceneByName(string sceneName)

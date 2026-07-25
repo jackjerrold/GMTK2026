@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InGameScenes/90KM.unity
     guid: 80ceba4c025fee8498d0ac6bbb84af48
+  - enabled: 1
+    path: Assets/Scenes/InGameScenes/80Km.unity
+    guid: 895bdad062089d045a2f31635a4001d4
   - enabled: 0
     path: Assets/Scenes/InGameScenes/100Km.unity
     guid: e88ae9715b493584ebf4c791a843cb66

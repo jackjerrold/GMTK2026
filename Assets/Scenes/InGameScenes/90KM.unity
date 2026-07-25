@@ -439,6 +439,7 @@ MonoBehaviour:
   tmp: {fileID: 820315603}
   sceneController: {fileID: 612106712}
   prefab: {fileID: 465821411888230955, guid: 2a3d1527847ea6a4ea84320f2b0bc74a, type: 3}
+  lightningImpactPrefab: {fileID: 6284878036624379590, guid: b2498106a2bcdb142ac0958a98f8c93a, type: 3}
   cloud: {fileID: 979817803}
   rod: {fileID: 1232127992}
   obstacleLayer:

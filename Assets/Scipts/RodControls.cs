@@ -5,6 +5,9 @@ public class RodControls : MonoBehaviour
 {
     private Camera mainCamera; //Used to track mouse
 
+    [SerializeField] private Sprite charged, nonCharged;
+    [SerializeField] private SpriteRenderer SpriteRenderer;
+
     private bool canAbsorb = false;
     private bool isCharged = false;
 
@@ -53,10 +56,16 @@ public class RodControls : MonoBehaviour
 
         if (isCharged) { //isCharged logic with timer
 
+            SpriteRenderer.sprite = charged;
+
             if (Mouse.current.leftButton.wasPressedThisFrame)
             {
                 expell();
             }
+        }
+        else
+        {
+            SpriteRenderer.sprite = nonCharged;
         }
     }
     

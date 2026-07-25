@@ -17,6 +17,9 @@ public class Lightning : MonoBehaviour
     private GameObject prefab;
 
     [SerializeField]
+    private GameObject lightningImpactPrefab;
+
+    [SerializeField]
     private Transform cloud;
 
     [SerializeField]
@@ -41,16 +44,18 @@ public class Lightning : MonoBehaviour
         updateTimer();
 
         timer += Time.deltaTime;
-        transform.position = new Vector2(player.position.x, transform.position.y);
+        float yPos = Mathf.Lerp(transform.position.y, player.position.y + 20, 0.2f);
+        transform.position = new Vector2(player.position.x, yPos);
 
 
 
         if (timer >= countdown)
         {
-            RaycastHit2D ray = Raycast(player.position);
+            RaycastHit2D ray = Raycast(cloud.position);
 
             if (ray.collider == null)
             {
+
                 if (rod.Absorb() == true)
                 {
                     CreateLightning(rod.rodTip, Vector2.zero);
@@ -63,11 +68,15 @@ public class Lightning : MonoBehaviour
             }
             else
             {
-                CreateLightning(ray.transform, ray.point);
-                Destructable destructable = ray.collider.GetComponent<Destructable>();
-                if (destructable != null)
+                if (!ray.collider.CompareTag("ZapIgnore"))
                 {
-                    destructable.Destruct();
+
+                    CreateLightning(LightningImpact(ray.point), ray.point);
+                    Destructable destructable = ray.collider.GetComponent<Destructable>();
+                    if (destructable != null)
+                    {
+                        destructable.Destruct();
+                    }
                 }
             }
             TriggerScreenEffects();
@@ -118,7 +127,7 @@ public class Lightning : MonoBehaviour
 
     private RaycastHit2D Raycast(Vector2 startPosition)
     {
-        Vector2 targetPosition = new Vector2(cloud.position.x, cloud.position.y);
+        Vector2 targetPosition = player.position;
         Vector2 distance = targetPosition - startPosition;
 
         RaycastHit2D ray = Physics2D.Raycast(startPosition, distance.normalized, distance.magnitude, obstacleLayer);
@@ -171,5 +180,13 @@ public class Lightning : MonoBehaviour
         {
             tmp.text = displayTime.ToString();
         }
+    }
+
+    private Transform LightningImpact(Vector2 position)
+    {
+        GameObject LightningImpact = Instantiate(lightningImpactPrefab, position, Quaternion.identity);
+        Destroy(LightningImpact, 2f);
+
+        return LightningImpact.transform;
     }
 }

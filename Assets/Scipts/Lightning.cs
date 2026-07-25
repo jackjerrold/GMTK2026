@@ -17,6 +17,9 @@ public class Lightning : MonoBehaviour
     private GameObject prefab;
 
     [SerializeField]
+    private GameObject lightningImpactPrefab;
+
+    [SerializeField]
     private Transform cloud;
 
     [SerializeField]
@@ -47,7 +50,7 @@ public class Lightning : MonoBehaviour
 
         if (timer >= countdown)
         {
-            RaycastHit2D ray = Raycast(player.position);
+            RaycastHit2D ray = Raycast(cloud.position);
 
             if (ray.collider == null)
             {
@@ -63,7 +66,7 @@ public class Lightning : MonoBehaviour
             }
             else
             {
-                CreateLightning(ray.transform, ray.point);
+                CreateLightning(LightningImpact(ray.point), ray.point);
                 Destructable destructable = ray.collider.GetComponent<Destructable>();
                 if (destructable != null)
                 {
@@ -118,7 +121,7 @@ public class Lightning : MonoBehaviour
 
     private RaycastHit2D Raycast(Vector2 startPosition)
     {
-        Vector2 targetPosition = new Vector2(cloud.position.x, cloud.position.y);
+        Vector2 targetPosition = player.position;
         Vector2 distance = targetPosition - startPosition;
 
         RaycastHit2D ray = Physics2D.Raycast(startPosition, distance.normalized, distance.magnitude, obstacleLayer);
@@ -171,5 +174,12 @@ public class Lightning : MonoBehaviour
         {
             tmp.text = displayTime.ToString();
         }
+    }
+
+    private Transform LightningImpact(Vector2 position) {
+        GameObject LightningImpact = Instantiate(lightningImpactPrefab, position, Quaternion.identity);
+        Destroy(LightningImpact, 2f);
+
+        return LightningImpact.transform;
     }
 }

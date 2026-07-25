@@ -15,9 +15,7 @@ public class MoveController : MonoBehaviour
     [Header("State Machine")]
     [SerializeField] private MovementState currentState = MovementState.Idle;
 
-    
-    
-    
+    public Vector2 returnCheckPoint;
     
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -54,7 +52,7 @@ public class MoveController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (rb == null) return;
+        if (rb == null || currentState == MovementState.Dead) return;
 
         //makes it so that if you are going in a direction and press the opposite, you wont slie and drift before going the other way
         if (snapDirectionChanges && MoveInput.x != 0 && Mathf.Sign(MoveInput.x) != Mathf.Sign(rb.linearVelocity.x) && Mathf.Abs(rb.linearVelocity.x) > 0.1f)
@@ -94,11 +92,16 @@ public class MoveController : MonoBehaviour
         rb.linearVelocity = clampedVelocity;
     }
 
-    public void TriggerDeath()
+    public void TriggerDeath(Vector2 CP)
     {
+        returnCheckPoint = CP;
+
         currentState = MovementState.Dead;
         deathTimer = DEATH_DURATION;
         rb.linearVelocity = Vector2.zero;
+        rb.AddForce(Vector2.up * 7, ForceMode2D.Impulse);
+        rb.constraints = RigidbodyConstraints2D.None;
+        rb.angularVelocity = -100;
     }
     private void DetermineState()
     {
@@ -121,7 +124,14 @@ public class MoveController : MonoBehaviour
             deathTimer -= Time.deltaTime;
             if (deathTimer <= 0f)
             {
+                transform.position = returnCheckPoint;
                 currentState = MovementState.Idle;
+
+                rb.linearVelocity = Vector2.zero;
+                rb.angularVelocity = 0;
+                transform.rotation  = Quaternion.identity;
+                rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+                
             }
             return;
         }

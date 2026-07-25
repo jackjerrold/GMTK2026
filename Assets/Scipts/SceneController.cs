@@ -3,6 +3,7 @@ using UnityEngine;
 public class SceneController : MonoBehaviour
 {
     [SerializeField] private Transform Player;
+    [SerializeField] private MoveController MoveController;
 
     public Vector2 CurrentCheckPointPosition;
 
@@ -13,8 +14,7 @@ public class SceneController : MonoBehaviour
 
     public void die()
     {
-        //ADD DEATH ANIM
-        Player.transform.position = CurrentCheckPointPosition;
+        MoveController.TriggerDeath(CurrentCheckPointPosition);
     }
 
     public void NextScene()

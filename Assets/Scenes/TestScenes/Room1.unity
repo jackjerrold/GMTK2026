@@ -3687,6 +3687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
   Player: {fileID: 862318183}
+  MoveController: {fileID: 982629747}
   CurrentCheckPointPosition: {x: 0, y: 0}
 --- !u!4 &825175477
 Transform:
@@ -3847,6 +3848,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &982629747 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1426817317186463214, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+  m_PrefabInstance: {fileID: 1469831786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d1db36d9294a6418c06ef103634188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveController
 --- !u!1 &990577305
 GameObject:
   m_ObjectHideFlags: 0
@@ -5180,6 +5192,7 @@ MonoBehaviour:
   tmp: {fileID: 1720923720}
   sceneController: {fileID: 825175476}
   prefab: {fileID: 465821411888230955, guid: 2a3d1527847ea6a4ea84320f2b0bc74a, type: 3}
+  lightningImpactPrefab: {fileID: 465821411888230955, guid: f06413a173f494f4fb152de5df410f66, type: 3}
   cloud: {fileID: 95602245}
   rod: {fileID: 1024840876}
   obstacleLayer:
@@ -5212,6 +5225,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1426817317186463214, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+      propertyPath: playerCollider
+      value: 
+      objectReference: {fileID: 1925254641}
     - target: {fileID: 1595219825700998118, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -6506,6 +6523,11 @@ Transform:
   - {fileID: 991455710}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1925254641 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 2903033463817620301, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+  m_PrefabInstance: {fileID: 1469831786}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2012865058
 GameObject:
   m_ObjectHideFlags: 0

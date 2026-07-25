@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneController
   Player: {fileID: 1251126768}
+  MoveController: {fileID: 0}
   CurrentCheckPointPosition: {x: 0, y: 0}
 --- !u!4 &612106713
 Transform:
@@ -165,11 +166,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &662689188 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-  m_PrefabInstance: {fileID: 1798436642928325850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &897363204
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +209,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1100537706}
-  - {fileID: 662689188}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1100537705
@@ -15957,67 +15952,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1001 &1798436642928325850
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 897363206}
-    m_Modifications:
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 17.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2186593652231118690, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4004755340542345139, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: sceneController
-      value: 
-      objectReference: {fileID: 612106712}
-    - target: {fileID: 9070819266008948693, guid: 619ccaa95712f564f80650bca588558c, type: 3}
-      propertyPath: m_Name
-      value: checkpoint
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 619ccaa95712f564f80650bca588558c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CheckPoint
   checkpointTransform: {fileID: 1733979268}
   sceneController: {fileID: 612106712}
-  FinalCheckpoint: 1
+  FinalCheckpoint: 0
 --- !u!1 &291368422
 GameObject:
   m_ObjectHideFlags: 0

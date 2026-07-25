@@ -570,6 +570,7 @@ MonoBehaviour:
   currentState: 0
   returnCheckPoint: {x: 0, y: 0}
   playerCollider: {fileID: 2903033463817620301}
+  PlayerSR: {fileID: 4128762305125864304}
   moveSpeed: 20
   jumpForce: 7
   maxSpeed: {x: 6, y: 10}

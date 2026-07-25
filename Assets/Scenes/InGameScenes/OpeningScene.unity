@@ -3255,7 +3255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1792324627
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3390,8 +3390,8 @@ MonoBehaviour:
   - 'Sol: Oh uh yes sir, in terms of mission success... there is no success.'
   - 'Mage: Absolutely Scandalous! Have I not taught you the path to success, AND
     YET YOU STILL THRIVE TO BE THE FAILURE YOU ARE DESTINED TO BE.'
-  - 'Sol: (This knob) I am sorry sir, it will not happen again. Probably. Maybe.
-    I''m actually not certain- '
+  - 'Sol: I am sorry sir, it will not happen again. Probably. Maybe. I''m actually
+    not certain- '
   - 'Mage: SILENCE! You insolent orphan. I give you meals, a roof over your head,
     and you still choose to speak your pity jokes. '
   - 'Sol: You expect me to be grateful to you? Since the day I existed you have made

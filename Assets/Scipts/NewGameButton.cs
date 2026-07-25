@@ -1,21 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonClick : MonoBehaviour
+public class NewGameButton : MonoBehaviour
 {
-    public bool isStart;
+    public string sceneToLoad;
     public bool isQuit;
 
     void OnMouseUp()
     {
-        if (isStart)
+        if (!string.IsNullOrEmpty(sceneToLoad))
         {
-            SceneManager.LoadScene(1); 
+            SceneManager.LoadScene(sceneToLoad);
         }
 
         if (isQuit)
-		// this only does something if its running directly on the PC and not through a website/unity
         {
+            // only works in built app
             Application.Quit();
         }
     }

@@ -11,7 +11,8 @@ public class DialogueTest : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     public GameObject dialoguePanel;
     public AudioSource audioSource;
-    public AudioClip typeSound;
+    public AudioClip solTypeSound;
+    public AudioClip mageTypeSound;
     public Image fadeImage;
     public float fadeDuration = 2f;
     public float startDelay = 4f;
@@ -121,15 +122,18 @@ public class DialogueTest : MonoBehaviour
     {
         textDisplay.text = "";
         string currentLine = testLines[currentLineIndex];
+        AudioClip clipToPlay = null;
         if (currentLine.StartsWith("Sol"))
         {
             FocusCameraOn(solTransform);
+            clipToPlay = solTypeSound;
         }
         else if (currentLine.StartsWith("Mage"))
         {
             FocusCameraOn(mageTransform);
+            clipToPlay = mageTypeSound;
         }
-        PlayTypeAudio();
+        PlayTypeAudio(clipToPlay);
         foreach (char letter in testLines[currentLineIndex].ToCharArray())
         {
             textDisplay.text += letter; 
@@ -199,12 +203,12 @@ public class DialogueTest : MonoBehaviour
         currentCameraTarget = target;
     }
 
-    private void PlayTypeAudio()
+    private void PlayTypeAudio(AudioClip clip)
     {
-        if (audioSource != null && typeSound != null)
+        if (audioSource != null && clip != null)
         {
-            audioSource.clip = typeSound;
-            audioSource.loop = true; 
+            audioSource.clip = clip;
+            audioSource.loop = true;
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();

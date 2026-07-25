@@ -3368,7 +3368,8 @@ MonoBehaviour:
   textDisplay: {fileID: 752401553}
   dialoguePanel: {fileID: 1258870129}
   audioSource: {fileID: 1792324627}
-  typeSound: {fileID: 8300000, guid: 9bbeaa28c4e5a2d4aa749e1d2a2bb5e7, type: 3}
+  solTypeSound: {fileID: 8300000, guid: 9bbeaa28c4e5a2d4aa749e1d2a2bb5e7, type: 3}
+  mageTypeSound: {fileID: 8300000, guid: 75fba2056a44a6943a62df10abebc50f, type: 3}
   fadeImage: {fileID: 882372793}
   fadeDuration: 1.5
   startDelay: 2

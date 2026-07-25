@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 
 public class DialogueTest : MonoBehaviour
@@ -8,6 +9,8 @@ public class DialogueTest : MonoBehaviour
 
     public TextMeshProUGUI textDisplay;
     public GameObject dialoguePanel;
+    public AudioSource audioSource;
+    public AudioClip typeSound;
     [TextArea(2, 5)]
     public string[] testLines;
     public float textSpeed = 0.04f;
@@ -30,6 +33,7 @@ public class DialogueTest : MonoBehaviour
                     StopCoroutine(typingCoroutine);
                 }
                 textDisplay.text = testLines[currentLineIndex];
+                StopTypeAudio();
             }
             else
             {
@@ -53,12 +57,13 @@ public class DialogueTest : MonoBehaviour
     IEnumerator TypeLine()
     {
         textDisplay.text = "";
-
+        PlayTypeAudio();
         foreach (char letter in testLines[currentLineIndex].ToCharArray())
         {
             textDisplay.text += letter; 
             yield return new WaitForSeconds(textSpeed); 
         }
+        StopTypeAudio();
     }
 
     void AdvanceLine()
@@ -70,9 +75,32 @@ public class DialogueTest : MonoBehaviour
         }
         else
         {
+            StopTypeAudio();
             textDisplay.text = "";
             dialoguePanel.SetActive(false);
             isDialogueActive = false;
+        }
+    }
+
+
+    private void PlayTypeAudio()
+    {
+        if (audioSource != null && typeSound != null)
+        {
+            audioSource.clip = typeSound;
+            audioSource.loop = true; 
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+    }
+
+    private void StopTypeAudio()
+    {
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
         }
     }
 }

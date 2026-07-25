@@ -707,6 +707,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!212 &1058290352 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 4128762305125864304, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+  m_PrefabInstance: {fileID: 1453001083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1100537705
 GameObject:
   m_ObjectHideFlags: 0
@@ -24727,6 +24732,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1426817317186463214, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+      propertyPath: PlayerSR
+      value: 
+      objectReference: {fileID: 1058290352}
     - target: {fileID: 1595219825700998118, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.41

@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 7c80751c78e53984a95c93ca71c1d9de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2883883629053926490
+    second: solspritesheetrun_0
+  - first:
+      213: -3096892274734013395
+    second: solspritesheetrun_1
+  - first:
+      213: 5643701753903377015
+    second: solspritesheetrun_2
+  - first:
+      213: -2909625104526132919
+    second: solspritesheetrun_3
+  - first:
+      213: -2877916758009965939
+    second: solspritesheetrun_4
+  - first:
+      213: -4927229124978002180
+    second: solspritesheetrun_5
+  - first:
+      213: -2017815908656267667
+    second: solspritesheetrun_6
+  - first:
+      213: 6785828152030485716
+    second: solspritesheetrun_7
+  - first:
+      213: -1132845516709259416
+    second: solspritesheetrun_8
+  - first:
+      213: 3815710064761560455
+    second: solspritesheetrun_9
+  - first:
+      213: -5513001907216487829
+    second: solspritesheetrun_10
+  - first:
+      213: 3116589760230070586
+    second: solspritesheetrun_11
+  - first:
+      213: -917402455277630895
+    second: solspritesheetrun_12
+  - first:
+      213: 5446377881011593311
+    second: solspritesheetrun_13
+  - first:
+      213: -611276020443085422
+    second: solspritesheetrun_14
+  - first:
+      213: 973400881087125697
+    second: solspritesheetrun_15
+  - first:
+      213: 4932636932129765565
+    second: solspritesheetrun_16
+  - first:
+      213: -3489485268609628788
+    second: solspritesheetrun_17
+  - first:
+      213: -5933482099537587366
+    second: solspritesheetrun_18
+  - first:
+      213: -6425061036396203078
+    second: solspritesheetrun_19
+  - first:
+      213: 5411206582878274830
+    second: solspritesheetrun_20
+  - first:
+      213: 4488676459272353142
+    second: solspritesheetrun_21
+  - first:
+      213: -3808475736458335418
+    second: solspritesheetrun_22
+  - first:
+      213: 2762434184979644844
+    second: solspritesheetrun_23
+  - first:
+      213: -4873741563921977261
+    second: solspritesheetrun_24
+  - first:
+      213: -8985787549239884480
+    second: solspritesheetrun_25
+  - first:
+      213: 4857851944373461106
+    second: solspritesheetrun_26
+  - first:
+      213: 3795702050673756475
+    second: solspritesheetrun_27
+  - first:
+      213: -6964526496134132887
+    second: solspritesheetrun_28
+  - first:
+      213: -2158279936792853933
+    second: solspritesheetrun_29
+  - first:
+      213: -5170160550020628892
+    second: solspritesheetrun_30
+  - first:
+      213: -750713785216420033
+    second: solspritesheetrun_31
+  - first:
+      213: -7412941963330750999
+    second: solspritesheetrun_32
+  - first:
+      213: -4038535883337482902
+    second: solspritesheetrun_33
+  - first:
+      213: -1280588630163446245
+    second: solspritesheetrun_34
+  - first:
+      213: -4182354732004426325
+    second: solspritesheetrun_35
+  - first:
+      213: -735806470200326204
+    second: solspritesheetrun_36
+  - first:
+      213: 6876618679909151258
+    second: solspritesheetrun_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: solspritesheetrun_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1314
+        width: 175
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cd25391ec950820800000000000000
+      internalID: 2883883629053926490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_1
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1315
+        width: 177
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d24e3d852e0a505d0800000000000000
+      internalID: -3096892274734013395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_2
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1314
+        width: 179
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ae8a3f7d4725e40800000000000000
+      internalID: 5643701753903377015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_3
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1311
+        width: 179
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 949392f126fee97d0800000000000000
+      internalID: -2909625104526132919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1311
+        width: 182
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d821ca9d4f59f08d0800000000000000
+      internalID: -2877916758009965939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_5
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1313
+        width: 185
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf63ab66737fe9bb0800000000000000
+      internalID: -4927229124978002180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_6
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 993
+        width: 189
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e39663f174ff3e0800000000000000
+      internalID: -2017815908656267667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1001
+        width: 206
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dc5f9c50ca1c2e50800000000000000
+      internalID: 6785828152030485716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_8
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 1007
+        width: 193
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867962f21035740f0800000000000000
+      internalID: -1132845516709259416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_9
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 1005
+        width: 207
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ddeff561024f430800000000000000
+      internalID: 3815710064761560455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_10
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1001
+        width: 198
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a6f4a79f1ed73b0800000000000000
+      internalID: -5513001907216487829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_11
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1000
+        width: 204
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a391221efd9504b20800000000000000
+      internalID: 3116589760230070586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 670
+        width: 208
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a0b19d35bb443f0800000000000000
+      internalID: -917402455277630895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_13
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 670
+        width: 203
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50ad3e93db659b40800000000000000
+      internalID: 5446377881011593311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_14
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 668
+        width: 197
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29586c5b2bf4487f0800000000000000
+      internalID: -611276020443085422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_15
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 765
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8104da1f6328d00800000000000000
+      internalID: 973400881087125697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_16
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 668
+        width: 192
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db83191d72f347440800000000000000
+      internalID: 4932636932129765565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_17
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 765
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c858093e2abd29fc0800000000000000
+      internalID: -3489485268609628788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_18
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 667
+        width: 191
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a535ce7a77908ada0800000000000000
+      internalID: -5933482099537587366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_19
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 765
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3b661670995d6a0800000000000000
+      internalID: -6425061036396203078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_20
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 667
+        width: 191
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0507b2a7b7781b40800000000000000
+      internalID: 5411206582878274830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_21
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 765
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675369a257bfa4e30800000000000000
+      internalID: 4488676459272353142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_22
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 343
+        width: 191
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64be4b0fe73952bc0800000000000000
+      internalID: -3808475736458335418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_23
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca18b175143265620800000000000000
+      internalID: 2762434184979644844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_24
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 344
+        width: 191
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350bf5baeddfc5cb0800000000000000
+      internalID: -4873741563921977261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_25
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045cd6c25d11c4380800000000000000
+      internalID: -8985787549239884480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_26
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 345
+        width: 191
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27022dbfa9e8a6340800000000000000
+      internalID: 4857851944373461106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_27
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3981a397ea0da430800000000000000
+      internalID: 3795702050673756475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_28
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 344
+        width: 191
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b01292d08095f90800000000000000
+      internalID: -6964526496134132887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_29
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3520c9125df3c02e0800000000000000
+      internalID: -2158279936792853933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_30
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 342
+        width: 191
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e38485f56ef38b0800000000000000
+      internalID: -5170160550020628892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_31
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37bf203acde495f0800000000000000
+      internalID: -750713785216420033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_32
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 340
+        width: 191
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5751f4f80ff1990800000000000000
+      internalID: -7412941963330750999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_33
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 441
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d300dd20d34f7c0800000000000000
+      internalID: -4038535883337482902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_34
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 19
+        width: 191
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1624bbfc6f6a3ee0800000000000000
+      internalID: -1280588630163446245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_35
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badb332c78a45f5c0800000000000000
+      internalID: -4182354732004426325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_36
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 18
+        width: 191
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c78640f9e3e9c5f0800000000000000
+      internalID: -735806470200326204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: solspritesheetrun_37
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 117
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12fcc76148ae6f50800000000000000
+      internalID: 6876618679909151258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      solspritesheetrun_0: 2883883629053926490
+      solspritesheetrun_1: -3096892274734013395
+      solspritesheetrun_10: -5513001907216487829
+      solspritesheetrun_11: 3116589760230070586
+      solspritesheetrun_12: -917402455277630895
+      solspritesheetrun_13: 5446377881011593311
+      solspritesheetrun_14: -611276020443085422
+      solspritesheetrun_15: 973400881087125697
+      solspritesheetrun_16: 4932636932129765565
+      solspritesheetrun_17: -3489485268609628788
+      solspritesheetrun_18: -5933482099537587366
+      solspritesheetrun_19: -6425061036396203078
+      solspritesheetrun_2: 5643701753903377015
+      solspritesheetrun_20: 5411206582878274830
+      solspritesheetrun_21: 4488676459272353142
+      solspritesheetrun_22: -3808475736458335418
+      solspritesheetrun_23: 2762434184979644844
+      solspritesheetrun_24: -4873741563921977261
+      solspritesheetrun_25: -8985787549239884480
+      solspritesheetrun_26: 4857851944373461106
+      solspritesheetrun_27: 3795702050673756475
+      solspritesheetrun_28: -6964526496134132887
+      solspritesheetrun_29: -2158279936792853933
+      solspritesheetrun_3: -2909625104526132919
+      solspritesheetrun_30: -5170160550020628892
+      solspritesheetrun_31: -750713785216420033
+      solspritesheetrun_32: -7412941963330750999
+      solspritesheetrun_33: -4038535883337482902
+      solspritesheetrun_34: -1280588630163446245
+      solspritesheetrun_35: -4182354732004426325
+      solspritesheetrun_36: -735806470200326204
+      solspritesheetrun_37: 6876618679909151258
+      solspritesheetrun_4: -2877916758009965939
+      solspritesheetrun_5: -4927229124978002180
+      solspritesheetrun_6: -2017815908656267667
+      solspritesheetrun_7: 6785828152030485716
+      solspritesheetrun_8: -1132845516709259416
+      solspritesheetrun_9: 3815710064761560455
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

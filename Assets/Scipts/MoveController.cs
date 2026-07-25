@@ -17,6 +17,7 @@ public class MoveController : MonoBehaviour
 
     public Vector2 returnCheckPoint;
     public Collider2D playerCollider;
+    public SpriteRenderer PlayerSprite;
     
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -122,6 +123,9 @@ public class MoveController : MonoBehaviour
     }
     private void Update()
     {
+        if (MoveInput.x > 0) { PlayerSprite.flipX = true; }
+        if (MoveInput.x < 0) { PlayerSprite.flipX = false; }
+
 
         if (currentState == MovementState.Dead)
         {

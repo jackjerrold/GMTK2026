@@ -41,6 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Paralax
+    uniqueID: 2204702697
+    locked: 0
+  - name: backround Objects
+    uniqueID: 785344555
+    locked: 0
+  - name: Backround Items
+    uniqueID: 873718023
+    locked: 0
+  - name: Player
+    uniqueID: 1114608717
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

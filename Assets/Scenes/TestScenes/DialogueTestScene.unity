@@ -609,7 +609,7 @@ MonoBehaviour:
     wrath. From this day forward the sky itself will strike you down.  '
   - 'Mage: Now scaddle away. And I''ll be waiting for you to crawl back to me. '
   - 'Sol: Well... Crap- '
-  textSpeed: 0.05
+  textSpeed: 0.03
 --- !u!114 &1998241010
 MonoBehaviour:
   m_ObjectHideFlags: 0

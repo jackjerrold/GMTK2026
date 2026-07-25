@@ -24,7 +24,7 @@ public class animationManager : MonoBehaviour
                 animator.Play("MC_Idle");
                 break;
             case MoveController.MovementState.Running:
-                animator.Play("MC_Happy");
+                animator.Play("MC_Run");
                 break;
             case MoveController.MovementState.Falling:
                 animator.Play("MC_Fall");

@@ -41,7 +41,8 @@ public class Lightning : MonoBehaviour
         updateTimer();
 
         timer += Time.deltaTime;
-        transform.position = new Vector2(player.position.x, transform.position.y);
+        float yPos = Mathf.Lerp(transform.position.y, player.position.y + 20, 0.2f);
+        transform.position = new Vector2(player.position.x,yPos);
 
 
 

@@ -3112,37 +3112,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 285065754}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &576302284 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 436906992504699887, guid: cc63162178ffa3f4194a6f743059fbe5, type: 3}
-  m_PrefabInstance: {fileID: 1293648574}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &576302285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576302284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61856815a5a9ee4fb1f70864b8a32cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelFourDialogue
-  textDisplay: {fileID: 0}
-  dialoguePanel: {fileID: 0}
-  audioSource: {fileID: 0}
-  solTypeSound: {fileID: 0}
-  mageTypeSound: {fileID: 0}
-  playerMovementScript: {fileID: 0}
-  mainCamera: {fileID: 0}
-  solTransform: {fileID: 0}
-  mageTransform: {fileID: 0}
-  defaultCamSize: 5
-  zoomCamSize: 3
-  cameraSpeed: 5
-  dialogueLines: []
-  textSpeed: 0.04
 --- !u!1 &612106711
 GameObject:
   m_ObjectHideFlags: 0
@@ -40396,10 +40365,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 436906992504699887, guid: cc63162178ffa3f4194a6f743059fbe5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 576302285}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc63162178ffa3f4194a6f743059fbe5, type: 3}
 --- !u!1001 &1453001083
 PrefabInstance:

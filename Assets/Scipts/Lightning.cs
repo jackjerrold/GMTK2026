@@ -69,9 +69,10 @@ public class Lightning : MonoBehaviour
             }
             else
             {
+
                 RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
 
-                if (rodRay.collider == null)
+                if (rodRay.collider == null && rod.isActiveAndEnabled)
                 {
                     Debug.Log("nothing in the way");
                     float absorbAngle = -15f;

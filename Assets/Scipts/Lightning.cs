@@ -111,6 +111,8 @@ public class Lightning : MonoBehaviour
 
     private void TriggerScreenEffects()
     {
+        if (sfx != null) { sfx.LightningSound.Play(); }
+
         // Screen flash
         if (screenFlashCanvasGroup != null)
         {
@@ -171,7 +173,6 @@ public class Lightning : MonoBehaviour
 
     private void CreateLightning(Transform target, Vector2 impactOffset)
     {
-        if (sfx != null) { sfx.LightningSound.Play(); }
 
         // Create single main bolt with random variations
         int segmentVariation = Random.Range(6, 12);

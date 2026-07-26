@@ -5,7 +5,7 @@ public class SFX : MonoBehaviour
 {
     public float volume = 1.0f;
 
-    public AudioSource RainSounds, JumpSound, LightningSound;
+    public AudioSource RainSounds, LightningSound;
 
     private void Start()
     {
@@ -15,7 +15,6 @@ public class SFX : MonoBehaviour
     public void UpdateVolume(float volume)
     {
         RainSounds.volume = volume;
-        JumpSound.volume = volume;
         LightningSound.volume = volume;
     }
 }

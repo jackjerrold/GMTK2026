@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueTest : MonoBehaviour
 {
@@ -196,6 +197,7 @@ public class DialogueTest : MonoBehaviour
         {
             playerMovementScript.enabled = true;
         }
+        SceneManager.LoadScene("100Km");
     }
 
     private void FocusCameraOn(Transform target)

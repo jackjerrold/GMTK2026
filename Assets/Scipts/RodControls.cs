@@ -127,6 +127,10 @@ public class RodControls : MonoBehaviour
 
         if (BossFight)
         {
+            if(transform.eulerAngles.z >= 160 && transform.eulerAngles.z <= 200f)
+            {
+                bossFightScr.Damage();
+            }
             bossFightScr.ExpellLightning(rodTip, Dir);
         }
         else

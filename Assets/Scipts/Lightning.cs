@@ -43,13 +43,15 @@ public class Lightning : MonoBehaviour
     private float xOffset = 0f;
     private float timer = 0f;
 
+    public float heightAbovePlayer = 15;
+
     void Update()
     {
         updateTimer();
 
         timer += Time.deltaTime;
 
-        float yPos = Mathf.Lerp(transform.position.y, player.position.y + 15, 0.2f);
+        float yPos = Mathf.Lerp(transform.position.y, player.position.y + heightAbovePlayer, 0.2f);
         transform.position = new Vector2(player.position.x + xOffset, yPos);
 
 

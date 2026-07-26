@@ -42,8 +42,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: CDBoss
+    uniqueID: 2215761679
+    locked: 0
+  - name: Platforms
+    uniqueID: 293798841
+    locked: 0
   - name: Player
     uniqueID: 2616242819
+    locked: 0
+  - name: fade
+    uniqueID: 1204806817
     locked: 0
   m_RenderingLayers:
   - Default

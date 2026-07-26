@@ -35,6 +35,8 @@ public class CD_BossFight : MonoBehaviour
 
     private Vector3 startPoint;
 
+    [SerializeField] private int health;
+
     private void Start()
     {
         startPoint = transform.position;
@@ -117,5 +119,21 @@ public class CD_BossFight : MonoBehaviour
     {
         transform.position = startPoint;
         timer = 0;
+    }
+
+    public void Damage()
+    {
+        health -= 1;
+        Debug.Log("dmg");
+        transform.position += Vector3.left * 3;
+        if (health == 0)
+        {
+            win();
+        }
+    }
+
+    private void win()
+    {
+        Debug.Log("win");
     }
 }

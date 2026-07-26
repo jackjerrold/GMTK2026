@@ -651,7 +651,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9bf2a02561f33644d90098110dc86996, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SceneFader
+  m_EditorClassIdentifier: Assembly-CSharp::SceneChangeButtonFade
   fadeImage: {fileID: 1406319676}
   sceneToLoad: MainMenu
   fadeDuration: 1
@@ -832,7 +832,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1035307529}
-        m_TargetAssemblyTypeName: SceneFader, Assembly-CSharp
+        m_TargetAssemblyTypeName: SceneChangeButtonFade, Assembly-CSharp
         m_MethodName: FadeToScene
         m_Mode: 1
         m_Arguments:
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

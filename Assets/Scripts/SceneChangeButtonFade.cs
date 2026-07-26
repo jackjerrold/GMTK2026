@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SceneFader : MonoBehaviour
+public class SceneChangeButtonFade : MonoBehaviour
 {
     // variables
     public Image fadeImage;
@@ -63,4 +63,5 @@ public class SceneFader : MonoBehaviour
         c.a = 0;
         fadeImage.color = c;
     }
+    
 }

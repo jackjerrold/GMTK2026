@@ -56,7 +56,7 @@ public class Lightning : MonoBehaviour
         float yPos = Mathf.Lerp(transform.position.y, player.position.y + heightAbovePlayer, 0.2f);
         transform.position = new Vector2(player.position.x + xOffset, yPos);
 
-        if (timer >= countdown - 1)
+        if (timer >= countdown)
         {
             xOffset = 0f;
             RaycastHit2D ray = Raycast(cloud.position);
@@ -78,7 +78,7 @@ public class Lightning : MonoBehaviour
 
                 RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
 
-                if (rodRay.collider == null)
+                if (rodRay.collider == null && rod.live)
                 {
                     float absorbAngle = -15f;
                     if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
@@ -210,7 +210,7 @@ public class Lightning : MonoBehaviour
 
     private void updateTimer()
     {
-        int displayTime = (int)Mathf.Round(countdown - timer);
+        int displayTime = (int)Mathf.Ceil(countdown - timer);
 
         countdownImage.sprite = Numbers[displayTime - 1];
     }

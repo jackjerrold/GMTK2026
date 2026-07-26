@@ -181,8 +181,8 @@ public class MoveController : MonoBehaviour
     {
         if (ctx.performed && IsGrounded() || coyoteTime > 0)
         {
-            if (sfx != null) { sfx.JumpSound.Play(); }
- 
+            if (sfx != null && !sfx.JumpSound.isPlaying) { sfx.JumpSound.Play(); }
+            
             // Zero vertical velocity first to get consistent jumps
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);

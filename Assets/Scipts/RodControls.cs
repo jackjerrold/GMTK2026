@@ -8,8 +8,8 @@ public class RodControls : MonoBehaviour
     [SerializeField] private Sprite charged, nonCharged;
     [SerializeField] private SpriteRenderer SpriteRenderer;
 
-    private bool canAbsorb = false;
-    private bool isCharged = false;
+    public bool canAbsorb = false;
+    public bool isCharged = false;
 
     public float expellPower = 5;
 

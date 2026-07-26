@@ -1,4 +1,5 @@
 using System.Net;
+using System.Xml.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -36,7 +37,7 @@ public class Lightning : MonoBehaviour
 
     [SerializeField]
     private float countdown = 5f;
-
+    private float xOffset = 0f;
     private float timer = 0f;
 
     void Update()
@@ -45,17 +46,17 @@ public class Lightning : MonoBehaviour
 
         timer += Time.deltaTime;
         float yPos = Mathf.Lerp(transform.position.y, player.position.y + 10, 0.2f);
-        transform.position = new Vector2(player.position.x, yPos);
+        transform.position = new Vector2(player.position.x + xOffset, yPos);
 
 
 
         if (timer >= countdown)
         {
+            xOffset = 0f;
             RaycastHit2D ray = Raycast(cloud.position);
 
             if (ray.collider == null)
             {
-
                 if (rod.Absorb() == true)
                 {
                     CreateLightning(rod.rodTip, Vector2.zero);
@@ -68,7 +69,31 @@ public class Lightning : MonoBehaviour
             }
             else
             {
-                if (!ray.collider.CompareTag("ZapIgnore"))
+                RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
+
+                if (rodRay.collider == null)
+                {
+                    Debug.Log("nothing in the way");
+                    float absorbAngle = -15f;
+                    if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
+                    { //absorbAngle from the horizontal
+                        rod.canAbsorb = true;
+                    }
+                    else
+                    {
+                        rod.canAbsorb = false;
+                    }
+
+                    if (rod.Absorb() == true)
+                    {
+                        Debug.Log("rod absorbed");
+                        xOffset = (rod.rodTip.transform.position.x - transform.position.x);
+                        CreateLightning(rod.rodTip, Vector2.zero);
+
+                    }
+                }
+
+                else if (!ray.collider.CompareTag("ZapIgnore"))
                 {
 
                     CreateLightning(LightningImpact(ray.point), ray.point);
@@ -128,6 +153,15 @@ public class Lightning : MonoBehaviour
     private RaycastHit2D Raycast(Vector2 startPosition)
     {
         Vector2 targetPosition = player.position;
+        Vector2 distance = targetPosition - startPosition;
+
+        RaycastHit2D ray = Physics2D.Raycast(startPosition, distance.normalized, distance.magnitude, obstacleLayer);
+
+        return ray;
+    }
+    private RaycastHit2D RodRaycast(Vector2 startPosition)
+    {
+        Vector2 targetPosition = rod.rodTip.position;
         Vector2 distance = targetPosition - startPosition;
 
         RaycastHit2D ray = Physics2D.Raycast(startPosition, distance.normalized, distance.magnitude, obstacleLayer);

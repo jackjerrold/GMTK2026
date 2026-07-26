@@ -78,7 +78,7 @@ public class Lightning : MonoBehaviour
 
                 RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
 
-                if (rodRay.collider == null)
+                if (rodRay.collider == null && rod.live)
                 {
                     float absorbAngle = -15f;
                     if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)

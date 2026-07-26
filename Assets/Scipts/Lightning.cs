@@ -56,7 +56,7 @@ public class Lightning : MonoBehaviour
         float yPos = Mathf.Lerp(transform.position.y, player.position.y + heightAbovePlayer, 0.2f);
         transform.position = new Vector2(player.position.x + xOffset, yPos);
 
-        if (timer >= countdown - 1)
+        if (timer >= countdown)
         {
             xOffset = 0f;
             RaycastHit2D ray = Raycast(cloud.position);
@@ -210,7 +210,7 @@ public class Lightning : MonoBehaviour
 
     private void updateTimer()
     {
-        int displayTime = (int)Mathf.Round(countdown - timer);
+        int displayTime = (int)Mathf.Ceil(countdown - timer);
 
         countdownImage.sprite = Numbers[displayTime - 1];
     }

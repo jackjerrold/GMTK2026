@@ -5,11 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/MainMenu2.unity
+    guid: 23c060db0ce64eb4189b7da880b10028
+  - enabled: 1
     path: Assets/Scenes/InGameScenes/OpeningScene.unity
     guid: 9abe1b2c1e010004e8296bbb55cd3156
   - enabled: 1
-    path: Assets/Scenes/InGameScenes/100KM.unity
+    path: Assets/Scenes/Credits.unity
+    guid: 084b3c980d1f44a4784f848ec00e55f2
+  - enabled: 1
+    path: Assets/Scenes/GameSettings.unity
+    guid: b71bb00db62f73f468067c6806803895
+  - enabled: 1
+    path: Assets/Scenes/InGameScenes/100Km.unity
     guid: cbb7103b8925ffa46b68bef069b9adca
   - enabled: 1
     path: Assets/Scenes/InGameScenes/90KM.unity

@@ -28079,7 +28079,7 @@ MonoBehaviour:
   cameraSpeed: 5
   dialogueLines:
   - 'Mage: Have you now learned the cruel reality of life?'
-  - 'Sol: Yeah, the only cruel thing is your 5 second lightning timer.'
+  - 'Sol: Yeah, the only cruel thing is your 5 second lightning countdown.'
   - 'Mage: And so you are ready to return to me.'
   - 'Sol: Hah. You think I want to return? I may have been struck by lightning but
     at least I was able to live life without being under your control.'

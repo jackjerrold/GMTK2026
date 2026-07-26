@@ -2254,7 +2254,7 @@ MonoBehaviour:
   rod: {fileID: 1232127992}
   screenFlashCanvasGroup: {fileID: 1798597858}
   mainCamera: {fileID: 1945990343}
-  countdown: 3
+  countdown: 5
 --- !u!1 &897363204
 GameObject:
   m_ObjectHideFlags: 0

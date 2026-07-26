@@ -33,6 +33,13 @@ public class CD_BossFight : MonoBehaviour
     private float countdown = 5f;
     private float timer = 0f;
 
+    private Vector3 startPoint;
+
+    private void Start()
+    {
+        startPoint = transform.position;
+    }
+
     private void Update()
     {
         timer += Time.deltaTime;
@@ -104,5 +111,11 @@ public class CD_BossFight : MonoBehaviour
         drawLightning.jitterAmount = jitterVariation;
         drawLightning.lightningDuration = lightningDuration;
         Destroy(endTransform, lightningDuration);
+    }
+
+    public void Reset()
+    {
+        transform.position = startPoint;
+        timer = 0;
     }
 }

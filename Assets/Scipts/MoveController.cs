@@ -11,7 +11,11 @@ public class MoveController : MonoBehaviour
         Falling,
         Dead
     }
-    
+
+    public bool boss;
+
+    public CD_BossFight bossScr;
+
     [Header("State Machine")]
     [SerializeField] private MovementState currentState = MovementState.Idle;
 
@@ -151,7 +155,12 @@ public class MoveController : MonoBehaviour
                 rb.angularVelocity = 0;
                 transform.rotation  = Quaternion.identity;
                 rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-                
+
+                if (boss)
+                {
+                    bossScr.Reset();
+                }
+
             }
             return;
         }

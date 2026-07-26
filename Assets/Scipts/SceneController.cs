@@ -14,7 +14,9 @@ public class SceneController : MonoBehaviour
 
     public void die()
     {
+
         MoveController.TriggerDeath(CurrentCheckPointPosition);
+        
     }
 
     public void NextScene()

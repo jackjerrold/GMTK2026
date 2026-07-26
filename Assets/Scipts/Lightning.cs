@@ -102,11 +102,6 @@ public class Lightning : MonoBehaviour
                 {
 
                     CreateLightning(LightningImpact(ray.point), ray.point);
-                    Destructable destructable = ray.collider.GetComponent<Destructable>();
-                    if (destructable != null)
-                    {
-                        destructable.Destruct();
-                    }
                 }
             }
             TriggerScreenEffects();

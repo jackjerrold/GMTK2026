@@ -389,6 +389,11 @@ MonoBehaviour:
   checkpointTransform: {fileID: 1733979268}
   sceneController: {fileID: 612106712}
   FinalCheckpoint: 0
+--- !u!198 &221315758 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6460989507856354636, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+  m_PrefabInstance: {fileID: 1453001083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &236275793
 GameObject:
   m_ObjectHideFlags: 0
@@ -27212,6 +27217,10 @@ PrefabInstance:
       propertyPath: lightningManager
       value: 
       objectReference: {fileID: 381537130}
+    - target: {fileID: 5845494773404667787, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+      propertyPath: LightningRodTipBurst
+      value: 
+      objectReference: {fileID: 221315758}
     - target: {fileID: 6329210535672743802, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
       propertyPath: m_Name
       value: player

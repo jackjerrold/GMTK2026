@@ -36,6 +36,7 @@ public class RodControls : MonoBehaviour
     [SerializeField]
     private Vector2 positionOffset = Vector2.zero; //Offset from the player (for following the player)
 
+    public ParticleSystem LightningRodTipBurst;
     void Start()
     {
        mainCamera = Camera.main;
@@ -107,6 +108,7 @@ public class RodControls : MonoBehaviour
         if (canAbsorb && live) {
             isCharged = true;
             moveController.AbsorptionBoost();
+            LightningRodTipBurst.Emit(30);
         }
         return (canAbsorb && live);
     }
@@ -119,6 +121,7 @@ public class RodControls : MonoBehaviour
     {
         isCharged = false;
 
+        LightningRodTipBurst.Emit(30);
         Vector2 Dir = rodTip.position - player.position;
         moveController.AddExternalForce(-Dir * expellPower, true);
 

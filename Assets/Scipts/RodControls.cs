@@ -8,6 +8,10 @@ public class RodControls : MonoBehaviour
     [SerializeField] private Sprite charged, nonCharged;
     [SerializeField] private SpriteRenderer SpriteRenderer;
 
+    [SerializeField] private CD_BossFight bossFightScr;
+
+    [SerializeField] private bool BossFight;
+
     public bool canAbsorb = false;
     public bool isCharged = false;
 
@@ -115,8 +119,31 @@ public class RodControls : MonoBehaviour
     {
         isCharged = false;
 
-        Vector2 Dir  = rodTip.position - player.position;
-        lightningManager.ExpellLightning(rodTip, Dir);
-        moveController.AddExternalForce(-Dir*expellPower, true);
+        Vector2 Dir = rodTip.position - player.position;
+        moveController.AddExternalForce(-Dir * expellPower, true);
+
+        if (BossFight)
+        {
+            bossFightScr.ExpellLightning(rodTip, Dir);
+        }
+        else
+        {
+            lightningManager.ExpellLightning(rodTip, Dir);
+        }
     }
+
+    public bool BossFightAttack()//returns weather or not it can recive an attack
+    {
+        if (transform.eulerAngles.z >= 180 - absorbAngle && transform.eulerAngles.z <= 180f + absorbAngle && !isCharged)
+        {
+            isCharged = true;
+            moveController.AbsorptionBoost();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
 }

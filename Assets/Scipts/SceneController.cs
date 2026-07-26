@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class SceneController : MonoBehaviour
         }
         else
         {
-            Debug.Log("No more scenes to load.");
+            SceneManager.LoadScene("MainMenu2");
         }
     }
 }

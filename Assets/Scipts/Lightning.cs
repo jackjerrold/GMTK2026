@@ -69,12 +69,10 @@ public class Lightning : MonoBehaviour
             }
             else
             {
-
                 RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
 
-                if (rodRay.collider == null && rod.isActiveAndEnabled)
+                if (rodRay.collider == null)
                 {
-                    Debug.Log("nothing in the way");
                     float absorbAngle = -15f;
                     if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
                     { //absorbAngle from the horizontal
@@ -87,7 +85,6 @@ public class Lightning : MonoBehaviour
 
                     if (rod.Absorb() == true)
                     {
-                        Debug.Log("rod absorbed");
                         xOffset = (rod.rodTip.transform.position.x - transform.position.x);
                         CreateLightning(rod.rodTip, Vector2.zero);
 

@@ -22,6 +22,8 @@ public class MoveController : MonoBehaviour
     public Vector2 returnCheckPoint;
     public Collider2D playerCollider;
     public SpriteRenderer PlayerSR;
+
+    public SFX sfx;
     
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
@@ -179,6 +181,8 @@ public class MoveController : MonoBehaviour
     {
         if (ctx.performed && IsGrounded() || coyoteTime > 0)
         {
+            if (sfx != null) { sfx.JumpSound.Play(); }
+ 
             // Zero vertical velocity first to get consistent jumps
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);

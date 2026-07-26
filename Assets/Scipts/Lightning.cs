@@ -45,6 +45,8 @@ public class Lightning : MonoBehaviour
 
     public float heightAbovePlayer = 15;
 
+    public SFX sfx;
+
     void Update()
     {
         updateTimer();
@@ -53,8 +55,6 @@ public class Lightning : MonoBehaviour
 
         float yPos = Mathf.Lerp(transform.position.y, player.position.y + heightAbovePlayer, 0.2f);
         transform.position = new Vector2(player.position.x + xOffset, yPos);
-
-
 
         if (timer >= countdown - 1)
         {
@@ -171,6 +171,8 @@ public class Lightning : MonoBehaviour
 
     private void CreateLightning(Transform target, Vector2 impactOffset)
     {
+        if (sfx != null) { sfx.LightningSound.Play(); }
+
         // Create single main bolt with random variations
         int segmentVariation = Random.Range(6, 12);
         float jitterVariation = Random.Range(0.3f, 0.8f);

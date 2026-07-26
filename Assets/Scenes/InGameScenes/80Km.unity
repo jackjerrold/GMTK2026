@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RodInGround
   player: {fileID: 1251126768}
-  rod: {fileID: 837298974}
+  rod: {fileID: 1232127992}
 --- !u!4 &692559349
 Transform:
   m_ObjectHideFlags: 0
@@ -4866,11 +4866,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!1 &837298974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6828304935655797770, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
-  m_PrefabInstance: {fileID: 1453001083}
-  m_PrefabAsset: {fileID: 0}
 --- !u!225 &852279883 stripped
 CanvasGroup:
   m_CorrespondingSourceObject: {fileID: 6435040589727963820, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
@@ -27272,7 +27267,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5845494773404667787, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
   m_PrefabInstance: {fileID: 1453001083}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837298974}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2626ec77d2b2e734d8fdf98f8831d0fe, type: 3}

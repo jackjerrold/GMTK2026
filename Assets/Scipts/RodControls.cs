@@ -11,6 +11,8 @@ public class RodControls : MonoBehaviour
     public bool canAbsorb = false;
     public bool isCharged = false;
 
+    public bool live = false;
+
     public float expellPower = 5;
 
     [SerializeField]
@@ -36,37 +38,53 @@ public class RodControls : MonoBehaviour
        moveController = player.GetComponent<MoveController>();
     }
 
-    
+
     void Update()
     {
-        if (player != null) { //This if part is all for the moving and rotating the rod to the player and mouse
-            Vector2 playerPosition = player.position;
+        if (live)
+        {
 
-            transform.position = playerPosition + positionOffset;
-            RotateToMouse();
-            
-            //        //Debug.Log($"Player Position: {player.position} | Rod Position: {transform.position} | Rod rotation: {transform.rotation}");
+            SpriteRenderer.enabled = true;
 
-            if (transform.eulerAngles.z >= absorbAngle && transform.eulerAngles.z <= 180f-absorbAngle && !isCharged) { //absorbAngle from the horizontal
-                canAbsorb = true;
-            } else {
-                canAbsorb = false;
+            if (player != null)
+            { //This if part is all for the moving and rotating the rod to the player and mouse
+                Vector2 playerPosition = player.position;
+
+                transform.position = playerPosition + positionOffset;
+                RotateToMouse();
+
+                //        //Debug.Log($"Player Position: {player.position} | Rod Position: {transform.position} | Rod rotation: {transform.rotation}");
+
+                if (transform.eulerAngles.z >= absorbAngle && transform.eulerAngles.z <= 180f - absorbAngle && !isCharged)
+                { //absorbAngle from the horizontal
+                    canAbsorb = true;
+                }
+                else
+                {
+                    canAbsorb = false;
+                }
             }
-        }
 
-        if (isCharged) { //isCharged logic with timer
+            if (isCharged)
+            { //isCharged logic with timer
 
-            SpriteRenderer.sprite = charged;
+                SpriteRenderer.sprite = charged;
 
-            if (Mouse.current.leftButton.wasPressedThisFrame)
+                if (Mouse.current.leftButton.wasPressedThisFrame)
+                {
+                    expell();
+                }
+            }
+            else
             {
-                expell();
+                SpriteRenderer.sprite = nonCharged;
             }
         }
         else
         {
-            SpriteRenderer.sprite = nonCharged;
+            SpriteRenderer.enabled = false;
         }
+
     }
     
     private void RotateToMouse() {
@@ -82,11 +100,11 @@ public class RodControls : MonoBehaviour
     }
 
     public bool Absorb() { //Used to be called in lightning when struck
-        if (canAbsorb) {
+        if (canAbsorb && live) {
             isCharged = true;
             moveController.AbsorptionBoost();
         }
-        return canAbsorb;
+        return (canAbsorb && live);
     }
 
     public bool IsCharged() { //Just for the colouring file

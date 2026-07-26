@@ -69,36 +69,52 @@ public class Lightning : MonoBehaviour
             }
             else
             {
-                RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
-
-                if (rodRay.collider == null)
+                if (rod == null)
                 {
-                    float absorbAngle = -15f;
-                    if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
-                    { //absorbAngle from the horizontal
-                        rod.canAbsorb = true;
-                    }
-                    else
+                    if (!ray.collider.CompareTag("ZapIgnore"))
                     {
-                        rod.canAbsorb = false;
-                    }
 
-                    if (rod.Absorb() == true)
-                    {
-                        xOffset = (rod.rodTip.transform.position.x - transform.position.x);
-                        CreateLightning(rod.rodTip, Vector2.zero);
-
+                        CreateLightning(LightningImpact(ray.point), ray.point);
+                        Destructable destructable = ray.collider.GetComponent<Destructable>();
+                        if (destructable != null)
+                        {
+                            destructable.Destruct();
+                        }
                     }
                 }
-
-                else if (!ray.collider.CompareTag("ZapIgnore"))
+                else
                 {
 
-                    CreateLightning(LightningImpact(ray.point), ray.point);
-                    Destructable destructable = ray.collider.GetComponent<Destructable>();
-                    if (destructable != null)
+                    RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
+
+                    if (rodRay.collider == null)
                     {
-                        destructable.Destruct();
+                        float absorbAngle = -15f;
+                        if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
+                        { //absorbAngle from the horizontal
+                            rod.canAbsorb = true;
+                        }
+                        else
+                        {
+                            rod.canAbsorb = false;
+                        }
+
+                        if (rod.Absorb() == true)
+                        {
+                            xOffset = (rod.rodTip.transform.position.x - transform.position.x);
+                            CreateLightning(rod.rodTip, Vector2.zero);
+
+                        }
+                    }
+                    else if (!ray.collider.CompareTag("ZapIgnore"))
+                    {
+
+                        CreateLightning(LightningImpact(ray.point), ray.point);
+                        Destructable destructable = ray.collider.GetComponent<Destructable>();
+                        if (destructable != null)
+                        {
+                            destructable.Destruct();
+                        }
                     }
                 }
             }

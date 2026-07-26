@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class RodInGround : MonoBehaviour
 {
     public Transform player;
-    public GameObject rod;
+    public RodControls rod;
 
     void Update()
     {
@@ -15,7 +15,7 @@ public class RodInGround : MonoBehaviour
     }
 
     public void Interact() {
-        rod.SetActive(true);
+        rod.live = true;
         Destroy(gameObject);
     }
 }

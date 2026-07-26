@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 507156185}
   - component: {fileID: 507156184}
   m_Layer: 0
-  m_Name: Square
+  m_Name: deathy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32072,7 +32072,7 @@ GameObject:
   - component: {fileID: 1853906949}
   - component: {fileID: 1853906948}
   m_Layer: 0
-  m_Name: Square (1)
+  m_Name: death
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

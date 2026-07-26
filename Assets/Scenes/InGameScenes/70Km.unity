@@ -16986,6 +16986,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5845494773404667787, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
+      propertyPath: live
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5845494773404667787, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
       propertyPath: lightningManager
       value: 
       objectReference: {fileID: 381537130}

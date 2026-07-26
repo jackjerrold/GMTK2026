@@ -612,7 +612,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3075164331273608468
 Transform:
   m_ObjectHideFlags: 0
@@ -645,6 +645,9 @@ MonoBehaviour:
   charged: {fileID: -7525203439705801189, guid: 6e13b5b15989d7a428849ee5f1a0b4d2, type: 3}
   nonCharged: {fileID: 7375691138102908865, guid: 552fe40d74dc1ff42a9c24dfe5ced774, type: 3}
   SpriteRenderer: {fileID: 3365168837641525677}
+  canAbsorb: 0
+  isCharged: 0
+  live: 0
   expellPower: 7
   absorbAngle: 25
   player: {fileID: 1595219825700998118}

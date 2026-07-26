@@ -817,11 +817,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6309064620185876532, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+--- !u!225 &134444489 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 4639717542139024006, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+  m_PrefabInstance: {fileID: 134444488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &145752704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,8 +1265,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lightning
   player: {fileID: 1251126768}
-  tmp: {fileID: 820315603}
   sceneController: {fileID: 612106712}
+  Numbers:
+  - {fileID: -855298285791758126, guid: 2d6d508d069ea254c951b4c185c60871, type: 3}
+  - {fileID: 6937817954938267909, guid: 017d084414813a8459a84eb80bed3653, type: 3}
+  - {fileID: -6470460504253458178, guid: e336b7d25a662404da2a5349e2c08e83, type: 3}
+  - {fileID: -4178046375966092550, guid: 1ed5aad24b6060144b3c0b84952ebb82, type: 3}
+  - {fileID: -3609754129978504188, guid: 4d236b8763b5470428ca2a7fb43e9eda, type: 3}
+  countdownImage: {fileID: 1295359937}
   prefab: {fileID: 465821411888230955, guid: 2a3d1527847ea6a4ea84320f2b0bc74a, type: 3}
   lightningImpactPrefab: {fileID: 6284878036624379590, guid: b2498106a2bcdb142ac0958a98f8c93a, type: 3}
   cloud: {fileID: 979817803}
@@ -1265,7 +1280,7 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  screenFlashCanvasGroup: {fileID: 852279883}
+  screenFlashCanvasGroup: {fileID: 134444489}
   mainCamera: {fileID: 1945990343}
   countdown: 5
 --- !u!4 &381537131
@@ -1899,22 +1914,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!114 &820315603 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6143838969307392583, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
-  m_PrefabInstance: {fileID: 134444488}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!225 &852279883 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 6435040589727963820, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
-  m_PrefabInstance: {fileID: 134444488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &862465932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2113,7 +2112,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 854aab6055fb6344cba727c6142ca182, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16715,6 +16714,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1595219825700998118, guid: a137d0a287c2cc147b723854f5cd1891, type: 3}
   m_PrefabInstance: {fileID: 1453001083}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1295359937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6691523995149399463, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+  m_PrefabInstance: {fileID: 134444488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &1324010142
 GameObject:
   m_ObjectHideFlags: 0
@@ -32738,7 +32748,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9ace7053590d69143afa64899a3f1060, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39739,7 +39749,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9ace7053590d69143afa64899a3f1060, type: 2}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -1,7 +1,7 @@
 using System.Net;
 using System.Xml.Linq;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Lightning : MonoBehaviour
 {
@@ -9,10 +9,13 @@ public class Lightning : MonoBehaviour
     private Transform player;
 
     [SerializeField]
-    private TextMeshProUGUI tmp;
+    private SceneController sceneController;
 
     [SerializeField]
-    private SceneController sceneController;
+    private Sprite[] Numbers;
+
+    [SerializeField]
+    private Image countdownImage;
 
     [SerializeField]
     private GameObject prefab;
@@ -50,7 +53,7 @@ public class Lightning : MonoBehaviour
 
 
 
-        if (timer >= countdown)
+        if (timer >= countdown - 1)
         {
             xOffset = 0f;
             RaycastHit2D ray = Raycast(cloud.position);
@@ -69,52 +72,37 @@ public class Lightning : MonoBehaviour
             }
             else
             {
-                if (rod == null)
-                {
-                    if (!ray.collider.CompareTag("ZapIgnore"))
-                    {
 
-                        CreateLightning(LightningImpact(ray.point), ray.point);
-                        Destructable destructable = ray.collider.GetComponent<Destructable>();
-                        if (destructable != null)
-                        {
-                            destructable.Destruct();
-                        }
+                RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
+
+                if (rodRay.collider == null)
+                {
+                    float absorbAngle = -15f;
+                    if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
+                    { //absorbAngle from the horizontal
+                        rod.canAbsorb = true;
+                    }
+                    else
+                    {
+                        rod.canAbsorb = false;
+                    }
+
+                    if (rod.Absorb() == true)
+                    {
+                        xOffset = (rod.rodTip.transform.position.x - transform.position.x);
+                        CreateLightning(rod.rodTip, Vector2.zero);
+
                     }
                 }
-                else
+
+                else if (!ray.collider.CompareTag("ZapIgnore"))
                 {
 
-                    RaycastHit2D rodRay = RodRaycast(new Vector2(rod.rodTip.position.x, cloud.position.y));
-
-                    if (rodRay.collider == null)
+                    CreateLightning(LightningImpact(ray.point), ray.point);
+                    Destructable destructable = ray.collider.GetComponent<Destructable>();
+                    if (destructable != null)
                     {
-                        float absorbAngle = -15f;
-                        if (rod.transform.eulerAngles.z >= absorbAngle && rod.transform.eulerAngles.z <= 180f - absorbAngle && !rod.isCharged)
-                        { //absorbAngle from the horizontal
-                            rod.canAbsorb = true;
-                        }
-                        else
-                        {
-                            rod.canAbsorb = false;
-                        }
-
-                        if (rod.Absorb() == true)
-                        {
-                            xOffset = (rod.rodTip.transform.position.x - transform.position.x);
-                            CreateLightning(rod.rodTip, Vector2.zero);
-
-                        }
-                    }
-                    else if (!ray.collider.CompareTag("ZapIgnore"))
-                    {
-
-                        CreateLightning(LightningImpact(ray.point), ray.point);
-                        Destructable destructable = ray.collider.GetComponent<Destructable>();
-                        if (destructable != null)
-                        {
-                            destructable.Destruct();
-                        }
+                        destructable.Destruct();
                     }
                 }
             }
@@ -224,10 +212,7 @@ public class Lightning : MonoBehaviour
     {
         int displayTime = (int)Mathf.Round(countdown - timer);
 
-        if (tmp != null)
-        {
-            tmp.text = displayTime.ToString();
-        }
+        countdownImage.sprite = Numbers[displayTime - 1];
     }
 
     private Transform LightningImpact(Vector2 position)

@@ -278,6 +278,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+--- !u!225 &134444489 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 4639717542139024006, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+  m_PrefabInstance: {fileID: 134444488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &134444490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6691523995149399463, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
+  m_PrefabInstance: {fileID: 134444488}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!1 &208992453
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,8 +452,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lightning
   player: {fileID: 1251126768}
-  tmp: {fileID: 820315603}
   sceneController: {fileID: 612106712}
+  Numbers:
+  - {fileID: -855298285791758126, guid: 2d6d508d069ea254c951b4c185c60871, type: 3}
+  - {fileID: 6937817954938267909, guid: 017d084414813a8459a84eb80bed3653, type: 3}
+  - {fileID: -6470460504253458178, guid: e336b7d25a662404da2a5349e2c08e83, type: 3}
+  - {fileID: -4178046375966092550, guid: 1ed5aad24b6060144b3c0b84952ebb82, type: 3}
+  - {fileID: -3609754129978504188, guid: 4d236b8763b5470428ca2a7fb43e9eda, type: 3}
+  countdownImage: {fileID: 134444490}
   prefab: {fileID: 465821411888230955, guid: 2a3d1527847ea6a4ea84320f2b0bc74a, type: 3}
   lightningImpactPrefab: {fileID: 6284878036624379590, guid: b2498106a2bcdb142ac0958a98f8c93a, type: 3}
   cloud: {fileID: 979817803}
@@ -445,7 +467,7 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 256
-  screenFlashCanvasGroup: {fileID: 852279883}
+  screenFlashCanvasGroup: {fileID: 134444489}
   mainCamera: {fileID: 1945990343}
   countdown: 5
 --- !u!4 &381537131
@@ -803,22 +825,6 @@ MonoBehaviour:
   checkpointTransform: {fileID: 1762611878}
   sceneController: {fileID: 612106712}
   FinalCheckpoint: 0
---- !u!114 &820315603 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6143838969307392583, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
-  m_PrefabInstance: {fileID: 134444488}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
---- !u!225 &852279883 stripped
-CanvasGroup:
-  m_CorrespondingSourceObject: {fileID: 6435040589727963820, guid: d49eddde030ffe14f9e0eaa243a603c4, type: 3}
-  m_PrefabInstance: {fileID: 134444488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &897363204
 GameObject:
   m_ObjectHideFlags: 0

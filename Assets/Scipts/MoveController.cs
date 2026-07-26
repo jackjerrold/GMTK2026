@@ -190,6 +190,13 @@ public class MoveController : MonoBehaviour
         }
     }
 
+    public void AbsorptionBoost()
+    {
+        if (IsGrounded()) { rb.AddForce(Vector2.up * 5, ForceMode2D.Impulse); }
+        else { rb.linearVelocity = new Vector2(rb.linearVelocity.x, 13); }
+    }
+
+
     // External force with position for directional knockback
     public void AddExternalForceAtPosition(Vector2 force, Vector2 position, bool isImpulse = true)
     {

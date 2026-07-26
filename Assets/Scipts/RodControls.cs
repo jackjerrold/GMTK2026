@@ -84,6 +84,7 @@ public class RodControls : MonoBehaviour
     public bool Absorb() { //Used to be called in lightning when struck
         if (canAbsorb) {
             isCharged = true;
+            moveController.AbsorptionBoost();
         }
         return canAbsorb;
     }
